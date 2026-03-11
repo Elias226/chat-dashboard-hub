@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Sidebar from "@/components/Sidebar";
+import DashboardCharts from "@/components/DashboardCharts";
+import ChatInput from "@/components/ChatInput";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="flex h-screen bg-background">
+      <Sidebar />
+      <main className="flex flex-1 flex-col overflow-auto">
+        <header className="flex items-center justify-between border-b border-border px-8 py-4">
+          <h1 className="text-lg font-semibold text-foreground">Chat Político</h1>
+        </header>
+
+        <div className="flex flex-1 flex-col px-8 py-6">
+          <DashboardCharts />
+
+          <div className="flex flex-1 items-center justify-center">
+            <ChatInput />
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
