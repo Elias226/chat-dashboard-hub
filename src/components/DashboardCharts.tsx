@@ -97,7 +97,7 @@ const DashboardCharts = () => {
 
         <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow">
           <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Região</p>
-          <ResponsiveContainer width="100%" height={220} className="bg-primary-foreground text-accent-foreground">
+          <ResponsiveContainer width="100%" height={220} className="text-accent-foreground bg-primary">
             <BarChart data={regionData}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
               <XAxis dataKey="name" tick={{ fontSize: 10 }} />
