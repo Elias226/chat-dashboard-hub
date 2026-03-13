@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <aside className="flex h-screen w-60 flex-col border-r border-border bg-sidebar">
       <div className="flex items-center gap-2 px-5 py-5">
-        <div className="text-2xl font-bold text-primary">⫴</div>
+        <img src={logo} alt="Chat Político" className="h-8 w-8 object-contain" />
       </div>
 
       <nav className="flex-1 space-y-0.5 px-3 pt-2">
