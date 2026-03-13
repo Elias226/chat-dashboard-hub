@@ -1,4 +1,5 @@
 import { MessageSquarePlus, Search, Image, AppWindow, Compass, Code, FolderOpen } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { icon: MessageSquarePlus, label: "Novo chat" },
