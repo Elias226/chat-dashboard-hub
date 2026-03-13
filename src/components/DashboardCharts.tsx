@@ -1,54 +1,121 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from "recharts";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const yearData = [
-{ year: "2020", value: 35 },
-{ year: "2021", value: 28 },
-{ year: "2022", value: 22 },
-{ year: "2023", value: 18 },
-{ year: "2024", value: 15 },
-{ year: "2025", value: 12 },
-{ year: "2026", value: 10 },
-{ year: "2027", value: 8 }];
-
+  { year: "2020", value: 35 },
+  { year: "2021", value: 28 },
+  { year: "2022", value: 22 },
+  { year: "2023", value: 18 },
+  { year: "2024", value: 15 },
+  { year: "2025", value: 12 },
+  { year: "2026", value: 10 },
+  { year: "2027", value: 8 },
+];
 
 const raceData = [
-{ name: "amarela", value: 148 },
-{ name: "branca", value: 11861 },
-{ name: "indígena", value: 314 },
-{ name: "parda", value: 13484 },
-{ name: "preta", value: 4952 },
-{ name: "NA", value: 4753 }];
+  { name: "amarela", value: 148 },
+  { name: "branca", value: 11861 },
+  { name: "indígena", value: 314 },
+  { name: "parda", value: 13484 },
+  { name: "preta", value: 4952 },
+  { name: "NA", value: 4753 },
+];
 
+const voteData = [
+  { name: "Sim", value: 320 },
+  { name: "Não", value: 180 },
+  { name: "Abstenção", value: 50 },
+];
+
+const PIE_COLORS = [
+  "hsl(var(--primary))",
+  "hsl(var(--destructive))",
+  "hsl(var(--muted-foreground))",
+];
+
+const regionData = [
+  { name: "Norte", value: 4200 },
+  { name: "Nordeste", value: 8500 },
+  { name: "Centro-Oeste", value: 3100 },
+  { name: "Sudeste", value: 12400 },
+  { name: "Sul", value: 6300 },
+];
 
 const DashboardCharts = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-      <div className="rounded-xl border-border bg-card p-4 my-0 shadow-xl border">
-        <ResponsiveContainer width="100%" height={220}>
-          <BarChart data={yearData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="year" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
-            <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr]">
+      {/* Coluna esquerda */}
+      <div className="flex flex-col gap-6">
+        <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
+          <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Ano</p>
+          <ResponsiveContainer width="100%" height={220}>
+            <BarChart data={yearData}>
+              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+              <XAxis dataKey="year" tick={{ fontSize: 11 }} />
+              <YAxis tick={{ fontSize: 11 }} />
+              <Tooltip />
+              <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
+          <p className="mb-2 text-xs font-medium text-muted-foreground">Número de casos por Raça</p>
+          <ResponsiveContainer width="100%" height={200}>
+            <BarChart data={raceData}>
+              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+              <XAxis dataKey="name" tick={{ fontSize: 10 }} />
+              <YAxis tick={{ fontSize: 10 }} />
+              <Tooltip />
+              <Bar dataKey="value" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
 
-      <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
-        <p className="mb-2 text-xs font-medium text-muted-foreground">Número de casos por Raça</p>
-        <ResponsiveContainer width="100%" height={200}>
-          <BarChart data={raceData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="name" tick={{ fontSize: 10 }} />
-            <YAxis tick={{ fontSize: 10 }} />
-            <Tooltip />
-            <Bar dataKey="value" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
-    </div>);
+      {/* Coluna direita com scroll */}
+      <ScrollArea className="h-[480px]">
+        <div className="flex flex-col gap-6 pr-3">
+          <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
+            <p className="mb-2 text-xs font-medium text-muted-foreground">Votação</p>
+            <ResponsiveContainer width="100%" height={220}>
+              <PieChart>
+                <Pie
+                  data={voteData}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={50}
+                  outerRadius={80}
+                  dataKey="value"
+                  label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                  fontSize={11}
+                >
+                  {voteData.map((_, index) => (
+                    <Cell key={`cell-${index}`} fill={PIE_COLORS[index]} />
+                  ))}
+                </Pie>
+                <Tooltip />
+                <Legend wrapperStyle={{ fontSize: 11 }} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
 
+          <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
+            <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Região</p>
+            <ResponsiveContainer width="100%" height={220}>
+              <BarChart data={regionData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                <XAxis dataKey="name" tick={{ fontSize: 10 }} />
+                <YAxis tick={{ fontSize: 10 }} />
+                <Tooltip />
+                <Bar dataKey="value" fill="hsl(var(--secondary))" radius={[4, 4, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      </ScrollArea>
+    </div>
+  );
 };
 
 export default DashboardCharts;
