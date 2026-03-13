@@ -73,7 +73,7 @@ const DashboardCharts = () => {
 
         <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow">
           <p className="mb-2 text-xs font-medium text-muted-foreground">Votação</p>
-          <ResponsiveContainer width="100%" height={220}>
+          <ResponsiveContainer width="100%" height={220} className="py-0 my-0">
             <PieChart>
               <Pie
                 data={voteData}
