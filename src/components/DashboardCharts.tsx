@@ -46,8 +46,7 @@ const DashboardCharts = () => {
     <ScrollArea className="w-full" type="always">
       <div className="gap-6 pb-4 flex flex-row" style={{ minWidth: "1600px" }}>
         <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow">
-          <p className="mb-2 text-xs font-medium text-muted-foreground">
-</p>
+          <p className="mb-2 text-xs font-medium text-muted-foreground">Projetos de Lei Aprovados (Câmara + Senado)</p>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={yearData}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
