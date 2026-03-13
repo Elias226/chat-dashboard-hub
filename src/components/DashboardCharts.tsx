@@ -43,10 +43,9 @@ const regionData = [
 
 const DashboardCharts = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr]">
-      {/* Coluna esquerda */}
-      <div className="flex flex-col gap-6">
-        <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
+    <ScrollArea className="w-full" type="always">
+      <div className="flex gap-6 pb-4" style={{ minWidth: "1600px" }}>
+        <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow-xl">
           <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Ano</p>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={yearData}>
@@ -59,9 +58,9 @@ const DashboardCharts = () => {
           </ResponsiveContainer>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
+        <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow-xl">
           <p className="mb-2 text-xs font-medium text-muted-foreground">Número de casos por Raça</p>
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width="100%" height={220}>
             <BarChart data={raceData}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
               <XAxis dataKey="name" tick={{ fontSize: 10 }} />
@@ -71,50 +70,46 @@ const DashboardCharts = () => {
             </BarChart>
           </ResponsiveContainer>
         </div>
-      </div>
 
-      {/* Coluna direita com scroll */}
-      <ScrollArea className="h-[480px]">
-        <div className="flex flex-col gap-6 pr-3">
-          <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
-            <p className="mb-2 text-xs font-medium text-muted-foreground">Votação</p>
-            <ResponsiveContainer width="100%" height={220}>
-              <PieChart>
-                <Pie
-                  data={voteData}
-                  cx="50%"
-                  cy="50%"
-                  innerRadius={50}
-                  outerRadius={80}
-                  dataKey="value"
-                  label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                  fontSize={11}
-                >
-                  {voteData.map((_, index) => (
-                    <Cell key={`cell-${index}`} fill={PIE_COLORS[index]} />
-                  ))}
-                </Pie>
-                <Tooltip />
-                <Legend wrapperStyle={{ fontSize: 11 }} />
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
-
-          <div className="rounded-xl border border-border bg-card p-4 shadow-xl">
-            <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Região</p>
-            <ResponsiveContainer width="100%" height={220}>
-              <BarChart data={regionData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                <XAxis dataKey="name" tick={{ fontSize: 10 }} />
-                <YAxis tick={{ fontSize: 10 }} />
-                <Tooltip />
-                <Bar dataKey="value" fill="hsl(var(--secondary))" radius={[4, 4, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+        <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow-xl">
+          <p className="mb-2 text-xs font-medium text-muted-foreground">Votação</p>
+          <ResponsiveContainer width="100%" height={220}>
+            <PieChart>
+              <Pie
+                data={voteData}
+                cx="50%"
+                cy="50%"
+                innerRadius={50}
+                outerRadius={80}
+                dataKey="value"
+                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                fontSize={11}
+              >
+                {voteData.map((_, index) => (
+                  <Cell key={`cell-${index}`} fill={PIE_COLORS[index]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend wrapperStyle={{ fontSize: 11 }} />
+            </PieChart>
+          </ResponsiveContainer>
         </div>
-      </ScrollArea>
-    </div>
+
+        <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow-xl">
+          <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Região</p>
+          <ResponsiveContainer width="100%" height={220}>
+            <BarChart data={regionData}>
+              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+              <XAxis dataKey="name" tick={{ fontSize: 10 }} />
+              <YAxis tick={{ fontSize: 10 }} />
+              <Tooltip />
+              <Bar dataKey="value" fill="hsl(var(--secondary))" radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+      <ScrollBar orientation="horizontal" />
+    </ScrollArea>
   );
 };
 
