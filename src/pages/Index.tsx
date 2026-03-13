@@ -11,16 +11,16 @@ const Index = () => {
           <h1 className="text-lg font-semibold text-foreground">Chat Político</h1>
         </header>
 
-        <div className="flex flex-1 flex-col px-8 py-6">
+        <div className="flex flex-1 flex-col px-8 py-6 bg-card">
           <DashboardCharts />
 
-          <div className="flex flex-1 items-center justify-center">
+          <div className="flex flex-1 items-center justify-center px-0 py-0 rounded-xl border-solid bg-card gap-0 my-[30px] border shadow-xl">
             <ChatInput />
           </div>
         </div>
       </main>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
