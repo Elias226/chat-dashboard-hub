@@ -46,7 +46,8 @@ const DashboardCharts = () => {
     <ScrollArea className="w-full" type="always">
       <div className="gap-6 pb-4 flex flex-row" style={{ minWidth: "1600px" }}>
         <div className="min-w-[380px] flex-1 rounded-xl border border-border bg-card p-4 shadow">
-          <p className="mb-2 text-xs font-medium text-muted-foreground">Casos por Ano</p>
+          <p className="mb-2 text-xs font-medium text-muted-foreground">
+</p>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={yearData}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
@@ -75,15 +76,14 @@ const DashboardCharts = () => {
           <p className="mb-2 text-xs font-medium text-muted-foreground">Votação</p>
           <ResponsiveContainer width="100%" height={220} className="py-0 my-0">
             <PieChart>
-              <Pie
-                data={voteData}
-                cx="50%"
-                cy="50%"
-                innerRadius={50}
-                outerRadius={80}
-                dataKey="value"
-                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                fontSize={11}>
+              <Pie data={voteData}
+              cx="50%"
+              cy="50%"
+              innerRadius={50}
+              outerRadius={80}
+              dataKey="value"
+              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+              fontSize={11}>
                 
                 {voteData.map((_, index) =>
                 <Cell key={`cell-${index}`} fill={PIE_COLORS[index]} />
