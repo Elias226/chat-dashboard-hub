@@ -23,7 +23,7 @@ const raceData = [
 const DashboardCharts = () => {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-      <div className="rounded-xl border border-border bg-card p-4 my-0 shadow-xl">
+      <div className="rounded-xl border-border bg-card p-4 my-0 shadow-xl border">
         <ResponsiveContainer width="100%" height={220}>
           <BarChart data={yearData}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
