@@ -12,6 +12,12 @@ const Index = () => {
         </header>
 
         <div className="flex flex-1 flex-col px-8 py-6 bg-card">
+          <div className="mb-3 flex justify-end">
+            <Button variant="outline" size="sm" onClick={() => navigate("/graficos")} className="gap-2">
+              <BarChart3 className="h-4 w-4" />
+              Mais Gráficos
+            </Button>
+          </div>
           <DashboardCharts />
 
           <div className="flex flex-1 items-center justify-center px-0 py-0 rounded-xl bg-card gap-0 my-[30px] shadow-xl border-solid border-2">
