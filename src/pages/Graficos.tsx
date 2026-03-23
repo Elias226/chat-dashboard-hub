@@ -100,7 +100,7 @@ const allCharts = [
   { id: "idade", title: "Casos por Faixa Etária", type: "area" },
 ];
 
-const ChartCard = ({ title, children }: { title: string; children: React.ReactNode }) => (
+const ChartCard = ({ title, children }: { title: string; children: React.ReactElement }) => (
   <div className="rounded-xl border border-border bg-card p-5 shadow">
     <p className="mb-3 text-sm font-medium text-muted-foreground">{title}</p>
     <ResponsiveContainer width="100%" height={260}>

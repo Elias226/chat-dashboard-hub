@@ -6,6 +6,7 @@ import DashboardCharts from "@/components/DashboardCharts";
 import ChatInput from "@/components/ChatInput";
 
 const Index = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex h-screen bg-background">
       <Sidebar />
