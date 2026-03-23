@@ -1,3 +1,6 @@
+import { useNavigate } from "react-router-dom";
+import { BarChart3 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import Sidebar from "@/components/Sidebar";
 import DashboardCharts from "@/components/DashboardCharts";
 import ChatInput from "@/components/ChatInput";
