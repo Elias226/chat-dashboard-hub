@@ -61,7 +61,10 @@ const ChatInput = ({ onSend }: ChatInputProps) => {
         <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted">
           <Mic className="h-4 w-4" />
         </button>
-        <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground text-background transition-opacity hover:opacity-80">
+        <button
+          onClick={handleSend}
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground text-background transition-opacity hover:opacity-80"
+        >
           {message ? <Send className="h-4 w-4" /> : <AudioLines className="h-4 w-4" />}
         </button>
       </div>
