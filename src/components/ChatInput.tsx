@@ -54,6 +54,7 @@ const ChatInput = ({ onSend }: ChatInputProps) => {
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Pergunte alguma coisa"
           className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
         />
