@@ -1,15 +1,8 @@
 import { MessageSquarePlus, Search, Image, AppWindow, Compass, Code, FolderOpen } from "lucide-react";
 import logo from "@/assets/logo.png";
 
-const navItems = [
-  { icon: MessageSquarePlus, label: "Novo chat" },
-  { icon: Search, label: "Buscar em chats" },
-  { icon: Image, label: "Imagens" },
-  { icon: AppWindow, label: "Aplicativos" },
-  { icon: Compass, label: "Investigação" },
-  { icon: Code, label: "Codex" },
-  { icon: FolderOpen, label: "Projetos" },
-];
+import { MessageSquarePlus } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Sidebar = () => {
   return (
