@@ -7,8 +7,26 @@ const suggestions = [
   "Quem é o governador do Ceará?",
 ];
 
-const ChatInput = () => {
+interface ChatInputProps {
+  onSend?: (message: string) => void;
+}
+
+const ChatInput = ({ onSend }: ChatInputProps) => {
   const [message, setMessage] = useState("");
+
+  const handleSend = () => {
+    if (message.trim()) {
+      onSend?.(message);
+      setMessage("");
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSend();
+    }
+  };
 
   return (
     <div className="mx-auto w-full max-w-2xl">
@@ -36,13 +54,17 @@ const ChatInput = () => {
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Pergunte alguma coisa"
           className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
         />
         <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted">
           <Mic className="h-4 w-4" />
         </button>
-        <button className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground text-background transition-opacity hover:opacity-80">
+        <button
+          onClick={handleSend}
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground text-background transition-opacity hover:opacity-80"
+        >
           {message ? <Send className="h-4 w-4" /> : <AudioLines className="h-4 w-4" />}
         </button>
       </div>

@@ -1,15 +1,5 @@
-import { MessageSquarePlus, Search, Image, AppWindow, Compass, Code, FolderOpen } from "lucide-react";
+import { MessageSquarePlus } from "lucide-react";
 import logo from "@/assets/logo.png";
-
-const navItems = [
-  { icon: MessageSquarePlus, label: "Novo chat" },
-  { icon: Search, label: "Buscar em chats" },
-  { icon: Image, label: "Imagens" },
-  { icon: AppWindow, label: "Aplicativos" },
-  { icon: Compass, label: "Investigação" },
-  { icon: Code, label: "Codex" },
-  { icon: FolderOpen, label: "Projetos" },
-];
 
 const Sidebar = () => {
   return (
@@ -19,15 +9,11 @@ const Sidebar = () => {
       </div>
 
       <nav className="flex-1 space-y-0.5 px-3 pt-2">
-        {navItems.map((item) => (
-          <button
-            key={item.label}
-            className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground transition-colors hover:bg-sidebar-accent"
-          >
-            <item.icon className="h-4 w-4" />
-            {item.label}
-          </button>
-        ))}
+        <button className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground transition-colors hover:bg-sidebar-accent">
+          <MessageSquarePlus className="h-4 w-4" />
+          Novo chat
+        </button>
+        <p className="px-3 py-2 text-xs text-muted-foreground">Todas as suas conversas</p>
       </nav>
 
       <div className="border-t border-border p-4">
