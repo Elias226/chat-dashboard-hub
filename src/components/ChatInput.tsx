@@ -7,8 +7,26 @@ const suggestions = [
   "Quem é o governador do Ceará?",
 ];
 
-const ChatInput = () => {
+interface ChatInputProps {
+  onSend?: (message: string) => void;
+}
+
+const ChatInput = ({ onSend }: ChatInputProps) => {
   const [message, setMessage] = useState("");
+
+  const handleSend = () => {
+    if (message.trim()) {
+      onSend?.(message);
+      setMessage("");
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSend();
+    }
+  };
 
   return (
     <div className="mx-auto w-full max-w-2xl">
