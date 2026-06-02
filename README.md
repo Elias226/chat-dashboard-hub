@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# Chat Politico
 
-## Project info
+Dashboard conversacional para explorar temas politicos, organizar conversas e visualizar graficos sobre PECs, votacoes e indicadores relacionados.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Aplicacao publicada em:
 
-## How can I edit this code?
+```txt
+https://elias226.github.io/chat-dashboard-hub/
+```
 
-There are several ways of editing your application.
+## Tecnologias
 
-**Use Lovable**
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Recharts
+- React Router
+- Vitest
+- Playwright
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Como rodar localmente
 
-Changes made via Lovable will be committed automatically to this repo.
+Requisitos:
 
-**Use your preferred IDE**
+- Node.js 22 ou superior
+- npm
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Instale as dependencias:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Para executar testes end-to-end pela primeira vez, instale os navegadores do Playwright:
 
-# Step 3: Install the necessary dependencies.
-npm i
+```sh
+npx playwright install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Inicie o servidor de desenvolvimento:
+
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O servidor local usa a porta `8080` por padrao.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+```sh
+npm run dev       # inicia o ambiente de desenvolvimento
+npm run build     # gera o build de producao em dist
+npm run preview   # abre um preview local do build
+npm run lint      # executa a analise estatica
+npm run test      # executa os testes unitarios
+npm run test:e2e  # executa os testes end-to-end com Playwright
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deploy
 
-## What technologies are used for this project?
+O deploy e feito pelo GitHub Actions usando o workflow:
 
-This project is built with:
+```txt
+.github/workflows/deploy.yml
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Ao enviar alteracoes para a branch `main`, o workflow:
 
-## How can I deploy this project?
+1. Instala as dependencias com `npm ci`.
+2. Gera o build com `npm run build`.
+3. Publica a pasta `dist` no GitHub Pages.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Observacoes
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- As respostas do chat ainda sao mockadas no frontend.
+- Alguns graficos usam dados estaticos de exemplo.
+- O historico de conversas fica salvo no `localStorage` do navegador.
