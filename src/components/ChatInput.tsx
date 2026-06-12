@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Plus, Mic, AudioLines, Loader2, Send } from "lucide-react";
 
 const suggestions = [
-  "Quem é Lula da Fonte?",
-  "Me fale sobre PL 2630/2020",
-  "Quem é Erika Hilton?",
+  "Para que serve o chatbot?",
+  "O que é uma PEC?",
+  "O que faz um deputado?",
 ];
 
 interface ChatInputProps {
