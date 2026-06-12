@@ -47,6 +47,20 @@ npm run dev
 
 O servidor local usa a porta `8080` por padrao.
 
+## Backend
+
+O chat consulta o backend do projeto `chatbot-politico` pelo endpoint:
+
+```txt
+https://chatbot-politico.onrender.com/chat
+```
+
+Para usar outro backend em desenvolvimento ou producao, defina:
+
+```sh
+VITE_CHAT_API_URL=https://seu-backend.com/chat
+```
+
 ## Scripts
 
 ```sh
@@ -74,6 +88,6 @@ Ao enviar alteracoes para a branch `main`, o workflow:
 
 ## Observacoes
 
-- As respostas do chat ainda sao mockadas no frontend.
+- O backend precisa expor um endpoint `POST /chat` que receba `{ "message": "..." }` e retorne `{ "reply": "..." }`.
 - Alguns graficos usam dados estaticos de exemplo.
 - O historico de conversas fica salvo no `localStorage` do navegador.

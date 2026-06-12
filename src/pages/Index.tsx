@@ -7,26 +7,12 @@ import DashboardCharts from "@/components/DashboardCharts";
 import ChatInput from "@/components/ChatInput";
 import ChatMessages from "@/components/ChatMessages";
 import { useConversations } from "@/hooks/useConversations";
-
-const MOCK_RESPONSES: Record<string, string> = {
-  default:
-    "Obrigado pela sua pergunta! Estou processando a informação. Em breve terei uma resposta mais completa para você.",
-};
-
-function getMockResponse(message: string): string {
-  const lower = message.toLowerCase();
-  if (lower.includes("chat político"))
-    return "O Chat Político é uma plataforma de inteligência artificial focada em política brasileira. Ele permite consultar dados sobre projetos de lei, eleições, parlamentares e muito mais.";
-  if (lower.includes("pec") || lower.includes("segurança"))
-    return "A PEC da Segurança Pública propõe mudanças na Constituição para ampliar as atribuições da União na segurança pública, incluindo a criação de uma política nacional de segurança e a constitucionalização do SUSP.";
-  if (lower.includes("governador") && lower.includes("ceará"))
-    return "O atual governador do Ceará é Elmano de Freitas (PT), que tomou posse em janeiro de 2023.";
-  return MOCK_RESPONSES.default;
-}
+import { sendChatMessage } from "@/services/chatApi";
 
 const Index = () => {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [isSending, setIsSending] = useState(false);
 
   const {
     conversations,
@@ -41,21 +27,31 @@ const Index = () => {
 
   const chatExpanded = activeConversation !== null;
 
-  const handleSend = (message: string) => {
+  const handleSend = async (message: string) => {
+    if (isSending) return;
+
     let convId = activeConversationId;
 
-    // If no active conversation, create one
     if (!convId) {
       convId = createConversation();
     }
 
-    // Add user message
     addMessage(convId, "user", message);
 
-    // Simulate assistant response
-    setTimeout(() => {
-      addMessage(convId!, "assistant", getMockResponse(message));
-    }, 600);
+    setIsSending(true);
+
+    try {
+      const reply = await sendChatMessage(message);
+      addMessage(convId, "assistant", reply);
+    } catch {
+      addMessage(
+        convId,
+        "assistant",
+        "Não consegui consultar o backend agora. Tente novamente em instantes."
+      );
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const handleNewChat = () => {
@@ -141,6 +137,7 @@ const Index = () => {
             <ChatInput
               onSend={handleSend}
               showSuggestions={!chatExpanded}
+              isSending={isSending}
             />
           </div>
         </div>
