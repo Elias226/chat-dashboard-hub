@@ -41,8 +41,12 @@ const Index = () => {
     setIsSending(true);
 
     try {
-      const reply = await sendChatMessage(message);
-      addMessage(convId, "assistant", reply);
+      const response = await sendChatMessage(message);
+      addMessage(convId, "assistant", response.reply, {
+        sources: response.sources,
+        intent: response.intent,
+        mode: response.mode,
+      });
     } catch {
       addMessage(
         convId,

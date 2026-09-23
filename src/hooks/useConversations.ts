@@ -50,13 +50,19 @@ export function useConversations() {
   }, []);
 
   const addMessage = useCallback(
-    (conversationId: string, role: "user" | "assistant", content: string) => {
+    (
+      conversationId: string,
+      role: "user" | "assistant",
+      content: string,
+      metadata: Pick<Message, "sources" | "intent" | "mode"> = {}
+    ) => {
       const msg: Message = {
         id: generateId(),
         conversation_id: conversationId,
         role,
         content,
         timestamp: new Date().toISOString(),
+        ...metadata,
       };
       setConversations((prev) =>
         prev.map((c) => {

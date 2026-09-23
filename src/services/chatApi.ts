@@ -1,3 +1,5 @@
+import { MessageSource } from "@/types/chat";
+
 const DEFAULT_CHAT_API_URL = "https://chatbot-politico.onrender.com/chat";
 
 const chatApiUrl = import.meta.env.VITE_CHAT_API_URL || DEFAULT_CHAT_API_URL;
@@ -6,9 +8,32 @@ type ChatApiResponse = {
   reply?: string;
   fulfillmentText?: string;
   error?: string;
+  sources?: Partial<MessageSource>[];
+  intent?: string;
+  mode?: string;
 };
 
-export async function sendChatMessage(message: string): Promise<string> {
+export type ChatApiResult = {
+  reply: string;
+  sources: MessageSource[];
+  intent?: string;
+  mode?: string;
+};
+
+function normalizeSources(sources?: Partial<MessageSource>[]): MessageSource[] {
+  if (!Array.isArray(sources)) return [];
+
+  return sources
+    .filter((source): source is MessageSource => {
+      return Boolean(source.title && source.url);
+    })
+    .map((source) => ({
+      title: String(source.title),
+      url: String(source.url),
+    }));
+}
+
+export async function sendChatMessage(message: string): Promise<ChatApiResult> {
   const response = await fetch(chatApiUrl, {
     method: "POST",
     headers: {
@@ -35,5 +60,10 @@ export async function sendChatMessage(message: string): Promise<string> {
     throw new Error("O backend não retornou uma resposta.");
   }
 
-  return reply;
+  return {
+    reply,
+    sources: normalizeSources(data?.sources),
+    intent: data?.intent,
+    mode: data?.mode,
+  };
 }

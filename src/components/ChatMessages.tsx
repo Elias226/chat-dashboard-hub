@@ -1,5 +1,6 @@
 import { Message } from "@/types/chat";
 import { useEffect, useRef } from "react";
+import { ExternalLink } from "lucide-react";
 
 interface ChatMessagesProps {
   messages: Message[];
@@ -28,7 +29,29 @@ const ChatMessages = ({ messages }: ChatMessagesProps) => {
                 : "bg-muted text-foreground"
             }`}
           >
-            {msg.content}
+            <div className="whitespace-pre-wrap">{msg.content}</div>
+
+            {msg.role === "assistant" && Boolean(msg.sources?.length) && (
+              <div className="mt-3 border-t border-border/70 pt-2">
+                <p className="mb-1 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
+                  Fontes
+                </p>
+                <div className="flex flex-col gap-1">
+                  {msg.sources?.map((source) => (
+                    <a
+                      key={source.url}
+                      href={source.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-medium text-primary underline-offset-2 hover:underline"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                      {source.title}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       ))}
