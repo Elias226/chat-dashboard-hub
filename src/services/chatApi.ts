@@ -1,4 +1,5 @@
 import { MessageSource } from "@/types/chat";
+import { normalizeOfficialSource } from "@/lib/sourceLinks";
 
 const DEFAULT_CHAT_API_URL = "https://chatbot-politico.onrender.com/chat";
 
@@ -30,7 +31,8 @@ function normalizeSources(sources?: Partial<MessageSource>[]): MessageSource[] {
     .map((source) => ({
       title: String(source.title),
       url: String(source.url),
-    }));
+    }))
+    .map(normalizeOfficialSource);
 }
 
 export async function sendChatMessage(message: string): Promise<ChatApiResult> {

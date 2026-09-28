@@ -1,12 +1,35 @@
-import { useState } from "react";
+import { useState, type ReactElement } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  PieChart, Pie, Cell, Legend, LineChart, Line, AreaChart, Area,
+  Area,
+  AreaChart,
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Legend,
+  Line,
+  LineChart,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
+
+type ChartInfo = {
+  id: string;
+  title: string;
+  description: string;
+  metric: string;
+  type: string;
+};
+
+const numberFormatter = new Intl.NumberFormat("pt-BR");
 
 const yearData = [
   { year: "2020", value: 35 },
@@ -20,12 +43,12 @@ const yearData = [
 ];
 
 const raceData = [
-  { name: "amarela", value: 148 },
-  { name: "branca", value: 11861 },
-  { name: "indígena", value: 314 },
-  { name: "parda", value: 13484 },
-  { name: "preta", value: 4952 },
-  { name: "NA", value: 4753 },
+  { name: "Parda", value: 13484 },
+  { name: "Branca", value: 11861 },
+  { name: "Preta", value: 4952 },
+  { name: "Não informado", value: 4753 },
+  { name: "Indígena", value: 314 },
+  { name: "Amarela", value: 148 },
 ];
 
 const voteData = [
@@ -35,11 +58,11 @@ const voteData = [
 ];
 
 const regionData = [
-  { name: "Norte", value: 4200 },
-  { name: "Nordeste", value: 8500 },
-  { name: "Centro-Oeste", value: 3100 },
   { name: "Sudeste", value: 12400 },
+  { name: "Nordeste", value: 8500 },
   { name: "Sul", value: 6300 },
+  { name: "Norte", value: 4200 },
+  { name: "Centro-Oeste", value: 3100 },
 ];
 
 const monthlyData = [
@@ -80,127 +103,249 @@ const ageData = [
   { faixa: "65+", value: 2100 },
 ];
 
-const PIE_COLORS = [
-  "hsl(var(--primary))",
-  "hsl(var(--destructive))",
-  "hsl(var(--muted-foreground))",
-  "hsl(var(--accent))",
-  "hsl(var(--secondary))",
+const colors = {
+  primary: "hsl(var(--primary))",
+  accent: "hsl(var(--accent))",
+  secondary: "hsl(var(--secondary-foreground))",
+  destructive: "hsl(var(--destructive))",
+  muted: "hsl(var(--muted-foreground))",
+};
+
+const pieColors = [
+  colors.primary,
+  colors.destructive,
+  colors.muted,
+  colors.accent,
+  colors.secondary,
   "hsl(var(--primary) / 0.6)",
 ];
 
-const allCharts = [
-  { id: "projetos", title: "Projetos de Lei Aprovados (Câmara + Senado)", type: "bar" },
-  { id: "raca", title: "Número de Casos por Raça", type: "bar" },
-  { id: "votacao", title: "Votação", type: "pie" },
-  { id: "regiao", title: "Casos por Região", type: "bar" },
-  { id: "mensal", title: "Projetos Mensais (Propostos vs Aprovados)", type: "line" },
-  { id: "partido", title: "Projetos por Partido", type: "bar" },
-  { id: "genero", title: "Distribuição por Gênero", type: "pie" },
-  { id: "idade", title: "Casos por Faixa Etária", type: "area" },
+const tooltipProps = {
+  cursor: { fill: "hsl(var(--muted))" },
+  contentStyle: {
+    borderRadius: 8,
+    border: "1px solid hsl(var(--border))",
+    boxShadow: "0 12px 30px hsl(220 15% 15% / 0.12)",
+  },
+  formatter: (value: number | string, name: string) => [
+    numberFormatter.format(Number(value)),
+    name,
+  ],
+};
+
+const allCharts: ChartInfo[] = [
+  {
+    id: "projetos",
+    title: "Projetos aprovados",
+    description: "Série anual consolidada entre Câmara e Senado",
+    metric: "148",
+    type: "Barra",
+  },
+  {
+    id: "raca",
+    title: "Distribuição por raça",
+    description: "Registros por autodeclaração",
+    metric: "35.512",
+    type: "Barra horizontal",
+  },
+  {
+    id: "votacao",
+    title: "Votação",
+    description: "Distribuição dos votos registrados",
+    metric: "550",
+    type: "Rosca",
+  },
+  {
+    id: "regiao",
+    title: "Casos por região",
+    description: "Volume agregado por região brasileira",
+    metric: "34.500",
+    type: "Barra",
+  },
+  {
+    id: "mensal",
+    title: "Projetos mensais",
+    description: "Propostos vs. aprovados ao longo do ano",
+    metric: "273",
+    type: "Linha",
+  },
+  {
+    id: "partido",
+    title: "Projetos por partido",
+    description: "Quantidade agregada por sigla partidária",
+    metric: "338",
+    type: "Barra",
+  },
+  {
+    id: "genero",
+    title: "Distribuição por gênero",
+    description: "Composição declarada no conjunto analisado",
+    metric: "550",
+    type: "Rosca",
+  },
+  {
+    id: "idade",
+    title: "Casos por faixa etária",
+    description: "Distribuição por grupos de idade",
+    metric: "23.700",
+    type: "Área",
+  },
 ];
 
-const ChartCard = ({ title, children }: { title: string; children: React.ReactElement }) => (
-  <div className="rounded-xl border border-border bg-card p-5 shadow">
-    <p className="mb-3 text-sm font-medium text-muted-foreground">{title}</p>
-    <ResponsiveContainer width="100%" height={260}>
+const ChartCard = ({ chart, children }: { chart: ChartInfo; children: ReactElement }) => (
+  <section className="rounded-lg border border-border bg-card p-5 shadow-sm">
+    <div className="mb-4 flex items-start justify-between gap-4">
+      <div className="min-w-0">
+        <p className="mb-1 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
+          {chart.type}
+        </p>
+        <h2 className="text-base font-semibold text-foreground">{chart.title}</h2>
+        <p className="mt-1 text-sm text-muted-foreground">{chart.description}</p>
+      </div>
+      <p className="rounded-md bg-muted px-2.5 py-1.5 text-sm font-semibold text-foreground">
+        {chart.metric}
+      </p>
+    </div>
+    <ResponsiveContainer width="100%" height={280}>
       {children}
     </ResponsiveContainer>
-  </div>
+  </section>
 );
 
 const Graficos = () => {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
 
-  const filtered = allCharts.filter((c) =>
-    c.title.toLowerCase().includes(search.toLowerCase())
-  );
+  const normalizedSearch = search.trim().toLowerCase();
+  const filtered = allCharts.filter((chart) => {
+    const haystack = `${chart.title} ${chart.description} ${chart.type}`.toLowerCase();
+    return haystack.includes(normalizedSearch);
+  });
 
-  const renderChart = (chart: (typeof allCharts)[0]) => {
+  const renderChart = (chart: ChartInfo) => {
     switch (chart.id) {
       case "projetos":
         return (
-          <BarChart data={yearData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="year" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
-            <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+          <BarChart data={yearData} margin={{ top: 12, right: 8, left: -18, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
+            <XAxis dataKey="year" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <YAxis tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <Tooltip {...tooltipProps} />
+            <Bar dataKey="value" name="Aprovados" fill={colors.primary} radius={[6, 6, 0, 0]} />
           </BarChart>
         );
       case "raca":
         return (
-          <BarChart data={raceData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="name" tick={{ fontSize: 10 }} />
-            <YAxis tick={{ fontSize: 10 }} />
-            <Tooltip />
-            <Bar dataKey="value" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
+          <BarChart
+            data={raceData}
+            layout="vertical"
+            margin={{ top: 8, right: 16, left: 24, bottom: 0 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" horizontal={false} />
+            <XAxis type="number" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <YAxis
+              dataKey="name"
+              type="category"
+              width={96}
+              tick={{ fontSize: 11 }}
+              tickLine={false}
+              axisLine={false}
+            />
+            <Tooltip {...tooltipProps} />
+            <Bar dataKey="value" name="Registros" fill={colors.accent} radius={[0, 6, 6, 0]} />
           </BarChart>
         );
       case "votacao":
         return (
           <PieChart>
-            <Pie data={voteData} cx="50%" cy="50%" innerRadius={50} outerRadius={80} dataKey="value"
-              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`} fontSize={11}>
-              {voteData.map((_, i) => <Cell key={i} fill={PIE_COLORS[i]} />)}
+            <Pie
+              data={voteData}
+              cx="50%"
+              cy="50%"
+              innerRadius={58}
+              outerRadius={92}
+              paddingAngle={3}
+              dataKey="value"
+              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+              fontSize={11}
+            >
+              {voteData.map((_, index) => (
+                <Cell key={`vote-${index}`} fill={pieColors[index]} />
+              ))}
             </Pie>
-            <Tooltip />
+            <Tooltip {...tooltipProps} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
           </PieChart>
         );
       case "regiao":
         return (
-          <BarChart data={regionData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="name" tick={{ fontSize: 10 }} />
-            <YAxis tick={{ fontSize: 10 }} />
-            <Tooltip />
-            <Bar dataKey="value" fill="hsl(var(--secondary))" radius={[4, 4, 0, 0]} />
+          <BarChart data={regionData} margin={{ top: 12, right: 8, left: -8, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
+            <XAxis dataKey="name" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
+            <YAxis tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <Tooltip {...tooltipProps} />
+            <Bar dataKey="value" name="Casos" fill={colors.secondary} radius={[6, 6, 0, 0]} />
           </BarChart>
         );
       case "mensal":
         return (
-          <LineChart data={monthlyData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="month" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
+          <LineChart data={monthlyData} margin={{ top: 12, right: 12, left: -18, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
+            <XAxis dataKey="month" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <YAxis tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <Tooltip {...tooltipProps} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
-            <Line type="monotone" dataKey="projetos" stroke="hsl(var(--primary))" strokeWidth={2} />
-            <Line type="monotone" dataKey="aprovados" stroke="hsl(var(--destructive))" strokeWidth={2} />
+            <Line type="monotone" dataKey="projetos" name="Propostos" stroke={colors.primary} strokeWidth={2.5} dot={{ r: 3 }} />
+            <Line type="monotone" dataKey="aprovados" name="Aprovados" stroke={colors.destructive} strokeWidth={2.5} dot={{ r: 3 }} />
           </LineChart>
         );
       case "partido":
         return (
-          <BarChart data={partidoData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="name" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
-            <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+          <BarChart data={partidoData} margin={{ top: 12, right: 8, left: -18, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
+            <XAxis dataKey="name" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <YAxis tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <Tooltip {...tooltipProps} />
+            <Bar dataKey="value" name="Projetos" fill={colors.primary} radius={[6, 6, 0, 0]} />
           </BarChart>
         );
       case "genero":
         return (
           <PieChart>
-            <Pie data={genderData} cx="50%" cy="50%" innerRadius={50} outerRadius={80} dataKey="value"
-              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`} fontSize={11}>
-              {genderData.map((_, i) => <Cell key={i} fill={PIE_COLORS[i]} />)}
+            <Pie
+              data={genderData}
+              cx="50%"
+              cy="50%"
+              innerRadius={58}
+              outerRadius={92}
+              paddingAngle={3}
+              dataKey="value"
+              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+              fontSize={11}
+            >
+              {genderData.map((_, index) => (
+                <Cell key={`gender-${index}`} fill={pieColors[index]} />
+              ))}
             </Pie>
-            <Tooltip />
+            <Tooltip {...tooltipProps} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
           </PieChart>
         );
       case "idade":
         return (
-          <AreaChart data={ageData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="faixa" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
-            <Area type="monotone" dataKey="value" fill="hsl(var(--primary) / 0.3)" stroke="hsl(var(--primary))" strokeWidth={2} />
+          <AreaChart data={ageData} margin={{ top: 12, right: 12, left: -18, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
+            <XAxis dataKey="faixa" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <YAxis tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
+            <Tooltip {...tooltipProps} />
+            <Area
+              type="monotone"
+              dataKey="value"
+              name="Casos"
+              fill="hsl(var(--primary) / 0.22)"
+              stroke={colors.primary}
+              strokeWidth={2.5}
+            />
           </AreaChart>
         );
       default:
@@ -210,25 +355,32 @@ const Graficos = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-10 flex items-center gap-4 border-b border-border bg-background px-8 py-4">
-        <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
-          <ArrowLeft className="h-5 w-5" />
-        </Button>
-        <h1 className="text-lg font-semibold text-foreground">Todos os Gráficos</h1>
-        <div className="relative ml-auto w-72">
+      <header className="sticky top-0 z-10 flex flex-col gap-3 border-b border-border bg-background/95 px-4 py-4 backdrop-blur sm:flex-row sm:items-center sm:px-8">
+        <div className="flex items-center gap-3">
+          <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
+            <ArrowLeft className="h-5 w-5" />
+          </Button>
+          <div>
+            <h1 className="text-lg font-semibold text-foreground">Todos os Gráficos</h1>
+            <p className="text-sm text-muted-foreground">
+              Painéis resumidos para leitura rápida dos dados do projeto.
+            </p>
+          </div>
+        </div>
+        <div className="relative w-full sm:ml-auto sm:w-80">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             placeholder="Pesquisar gráficos..."
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(event) => setSearch(event.target.value)}
             className="pl-9"
           />
         </div>
       </header>
 
-      <div className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2 xl:grid-cols-3">
+      <main className="grid grid-cols-1 gap-5 p-4 sm:p-8 lg:grid-cols-2 xl:grid-cols-3">
         {filtered.map((chart) => (
-          <ChartCard key={chart.id} title={chart.title}>
+          <ChartCard key={chart.id} chart={chart}>
             {renderChart(chart)}
           </ChartCard>
         ))}
@@ -237,7 +389,7 @@ const Graficos = () => {
             Nenhum gráfico encontrado.
           </p>
         )}
-      </div>
+      </main>
     </div>
   );
 };
