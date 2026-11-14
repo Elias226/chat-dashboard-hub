@@ -1,4 +1,4 @@
-import { Message } from "@/types/chat";
+import { Message, type MessageSource } from "@/types/chat";
 import { useEffect, useRef } from "react";
 import { ExternalLink } from "lucide-react";
 import { getSourceHost, normalizeOfficialSource } from "@/lib/sourceLinks";
@@ -21,7 +21,7 @@ const ChatMessages = ({ messages }: ChatMessagesProps) => {
       {messages.map((msg) => {
         const sources =
           msg.role === "assistant"
-            ? (msg.sources || []).map(normalizeOfficialSource)
+            ? (Array.isArray(msg.sources) ? msg.sources : []).map(normalizeOfficialSource).filter((source): source is MessageSource => source !== null)
             : [];
 
         return (
@@ -49,7 +49,7 @@ const ChatMessages = ({ messages }: ChatMessagesProps) => {
                         key={source.url}
                         href={source.url}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="group inline-flex items-start gap-2 rounded-md border border-border/70 bg-background/60 px-2.5 py-2 text-xs text-foreground transition-colors hover:border-primary/50 hover:bg-background"
                       >
                         <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" />

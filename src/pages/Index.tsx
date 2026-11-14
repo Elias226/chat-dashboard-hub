@@ -1,17 +1,17 @@
-import { useNavigate } from "react-router-dom";
-import { BarChart3, PanelLeftClose, PanelLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+import { PanelLeftClose, PanelLeft } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Sidebar from "@/components/Sidebar";
-import DashboardCharts from "@/components/DashboardCharts";
+import ChatWelcome from "@/components/ChatWelcome";
 import ChatInput from "@/components/ChatInput";
 import ChatMessages from "@/components/ChatMessages";
+import SiteFooter from "@/components/SiteFooter";
 import { useConversations } from "@/hooks/useConversations";
 import { sendChatMessage } from "@/services/chatApi";
 
 const Index = () => {
-  const navigate = useNavigate();
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 768);
   const [isSending, setIsSending] = useState(false);
 
   const {
@@ -25,7 +25,7 @@ const Index = () => {
     deleteConversation,
   } = useConversations();
 
-  const chatExpanded = activeConversation !== null;
+  const hasMessages = Boolean(activeConversation?.messages.length);
 
   const handleSend = async (message: string) => {
     if (isSending) return;
@@ -63,9 +63,9 @@ const Index = () => {
   };
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="flex h-dvh overflow-hidden bg-background">
       <div
-        className="h-screen shrink-0 overflow-hidden transition-all duration-500 ease-in-out"
+        className="h-full shrink-0 overflow-hidden transition-all duration-500 ease-in-out"
         style={{ width: sidebarOpen ? "15rem" : "0px" }}
       >
         <Sidebar
@@ -77,12 +77,13 @@ const Index = () => {
         />
       </div>
 
-      <main className="flex flex-1 flex-col overflow-hidden">
-        <header className="flex items-center justify-between border-b border-border px-8 py-4">
-          <div className="flex items-center gap-3">
+      <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+        <header className="flex shrink-0 flex-wrap items-center justify-between gap-3 border-b border-border px-4 py-4 sm:px-8">
+          <div className="flex min-w-0 flex-1 items-center gap-3">
             <Button
               variant="ghost"
               size="icon"
+              aria-label={sidebarOpen ? "Recolher histórico" : "Mostrar histórico"}
               onClick={() => setSidebarOpen((v) => !v)}
               className="shrink-0"
             >
@@ -92,60 +93,35 @@ const Index = () => {
                 <PanelLeft className="h-5 w-5" />
               )}
             </Button>
-            <h1 className="text-lg font-semibold text-foreground">
+            <h1 className="truncate text-lg font-semibold text-foreground">
               {activeConversation ? activeConversation.title : "Chat Político"}
             </h1>
           </div>
+          <nav aria-label="Navegação do assistente" className="flex shrink-0 gap-4 text-sm">
+            <Link to="/" className="text-muted-foreground hover:underline">Início</Link>
+            <Link to="/parlamentares" className="text-muted-foreground hover:underline">Parlamentares</Link>
+            <Link to="/graficos" className="text-muted-foreground hover:underline">Indicadores</Link>
+          </nav>
         </header>
 
-        <div className="flex flex-1 flex-col overflow-hidden bg-card">
-          {/* Charts section — visible only when no conversation is active */}
-          <div
-            className="overflow-hidden transition-all duration-500 ease-in-out px-8"
-            style={{
-              maxHeight: chatExpanded ? "0px" : "500px",
-              opacity: chatExpanded ? 0 : 1,
-              marginBottom: chatExpanded ? "0px" : "12px",
-              paddingTop: chatExpanded ? "0px" : "24px",
-            }}
-          >
-            <div className="mb-3 flex justify-end">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => navigate("/graficos")}
-                className="gap-2"
-              >
-                <BarChart3 className="h-4 w-4" />
-                Mais Gráficos
-              </Button>
-            </div>
-            <DashboardCharts />
-          </div>
-
-          {/* Chat area */}
-          <div
-            className="flex flex-1 flex-col overflow-hidden transition-all duration-500 ease-in-out"
-            style={{
-              flex: chatExpanded ? 1 : 0,
-              minHeight: chatExpanded ? 0 : "auto",
-            }}
-          >
-            {activeConversation && activeConversation.messages.length > 0 && (
-              <ChatMessages messages={activeConversation.messages} />
+        <main className="flex min-h-0 flex-1 flex-col overflow-hidden bg-card">
+          <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
+            {hasMessages ? (
+              <ChatMessages messages={activeConversation!.messages} />
+            ) : (
+              <ChatWelcome onSend={handleSend} isSending={isSending} />
             )}
           </div>
-
-          {/* Input area — always at the bottom */}
-          <div className="border-t border-border px-8 py-4">
+          {/* Input area — always below the scrollable content */}
+          <div className="shrink-0 border-t border-border px-4 py-4 sm:px-8">
             <ChatInput
               onSend={handleSend}
-              showSuggestions={!chatExpanded}
               isSending={isSending}
             />
           </div>
-        </div>
-      </main>
+        </main>
+        <SiteFooter compact showAiNotice />
+      </div>
     </div>
   );
 };

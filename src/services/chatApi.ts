@@ -26,13 +26,14 @@ function normalizeSources(sources?: Partial<MessageSource>[]): MessageSource[] {
 
   return sources
     .filter((source): source is MessageSource => {
-      return Boolean(source.title && source.url);
+      return Boolean(source && typeof source.title === "string" && typeof source.url === "string");
     })
     .map((source) => ({
       title: String(source.title),
       url: String(source.url),
     }))
-    .map(normalizeOfficialSource);
+    .map(normalizeOfficialSource)
+    .filter((source): source is MessageSource => source !== null);
 }
 
 export async function sendChatMessage(message: string): Promise<ChatApiResult> {
