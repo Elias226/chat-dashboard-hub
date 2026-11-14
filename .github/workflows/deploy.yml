@@ -5,11 +5,16 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      bootstrap_data:
+        description: 'Primeira publicação: permitir JSON oficial versionado somente se o remoto retornar 404'
+        type: boolean
+        default: false
+  schedule:
+    # Diariamente às 06:17 UTC (03:17 em Brasília), fora do início da hora.
+    - cron: '17 6 * * *'
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
   group: pages
@@ -17,13 +22,21 @@ concurrency:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      BASE_PATH: /${{ github.event.repository.name }}/
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4; verified upstream commit
+        with:
+          persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 22
           cache: npm
@@ -31,31 +44,60 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint
+        run: npm run lint
+
+      - name: TypeScript
+        run: npm run typecheck
+
+      - name: Unit and publication safety tests
+        run: npm run test:ci
+
+      # Push/manual may reuse the validated deployed snapshot on API failure.
+      # A scheduled refresh failure still exits nonzero and prevents deployment.
+      - name: Prepare complete official dataset
+        run: npm run data:prepare
+        env:
+          ALLOW_INITIAL_DATA: ${{ github.event_name == 'workflow_dispatch' && inputs.bootstrap_data && '1' || '0' }}
+
+      - name: Verify consolidated dataset
+        run: npm run data:validate
+
       - name: Build
         run: npm run build
+
+      # Browser installation is avoided for daily runs of unchanged application code.
+      - name: Install test browser
+        if: github.event_name != 'schedule'
+        run: npx playwright install --with-deps chromium
+
+      - name: E2E on Pages build
+        if: github.event_name != 'schedule'
+        run: npm run test:e2e:pages
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          RUN_PUBLISHED_LIVE: '1'
 
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: ./dist
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

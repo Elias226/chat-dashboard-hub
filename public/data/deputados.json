@@ -1,0 +1,3647 @@
+{
+  "complete": true,
+  "deputies": [
+    {
+      "id": 62881,
+      "siglaUf": "CE",
+      "siglaPartido": "PP",
+      "nome": "Danilo Forte",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/62881.jpg"
+    },
+    {
+      "id": 66385,
+      "siglaUf": "PI",
+      "siglaPartido": "PP",
+      "nome": "Julio Arcoverde",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/66385.jpg"
+    },
+    {
+      "id": 66828,
+      "siglaUf": "SP",
+      "siglaPartido": "UNIÃO",
+      "nome": "Fausto Pinato",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/66828.jpg"
+    },
+    {
+      "id": 69871,
+      "siglaUf": "BA",
+      "siglaPartido": "PV",
+      "nome": "Bacelar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/69871.jpg"
+    },
+    {
+      "id": 72442,
+      "siglaUf": "PE",
+      "siglaPartido": "PSB",
+      "nome": "Felipe Carreras",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/72442.jpg"
+    },
+    {
+      "id": 73433,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Arlindo Chinaglia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73433.jpg"
+    },
+    {
+      "id": 73441,
+      "siglaUf": "SP",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Celso Russomanno",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73441.jpg"
+    },
+    {
+      "id": 73486,
+      "siglaUf": "RS",
+      "siglaPartido": "PDT",
+      "nome": "Pompeo de Mattos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73486.jpg"
+    },
+    {
+      "id": 73579,
+      "siglaUf": "DF",
+      "siglaPartido": "PL",
+      "nome": "Alberto Fraga",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73579.jpg"
+    },
+    {
+      "id": 73604,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Rui Falcão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73604.jpg"
+    },
+    {
+      "id": 73692,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Osmar Terra",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73692.jpg"
+    },
+    {
+      "id": 73701,
+      "siglaUf": "RJ",
+      "siglaPartido": "PT",
+      "nome": "Benedita da Silva",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73701.jpg"
+    },
+    {
+      "id": 73768,
+      "siglaUf": "PR",
+      "siglaPartido": "PP",
+      "nome": "Dilceu Sperafico",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73768.jpg"
+    },
+    {
+      "id": 73778,
+      "siglaUf": "PR",
+      "siglaPartido": "PODE",
+      "nome": "Luiz Carlos Hauly",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73778.jpg"
+    },
+    {
+      "id": 73788,
+      "siglaUf": "PR",
+      "siglaPartido": "PP",
+      "nome": "Ricardo Barros",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73788.jpg"
+    },
+    {
+      "id": 73801,
+      "siglaUf": "PE",
+      "siglaPartido": "PCDOB",
+      "nome": "Renildo Calheiros",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73801.jpg"
+    },
+    {
+      "id": 73808,
+      "siglaUf": "BA",
+      "siglaPartido": "PSD",
+      "nome": "Sérgio Brito",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73808.jpg"
+    },
+    {
+      "id": 74041,
+      "siglaUf": "PB",
+      "siglaPartido": "PT",
+      "nome": "Luiz Couto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74041.jpg"
+    },
+    {
+      "id": 74043,
+      "siglaUf": "PB",
+      "siglaPartido": "PSD",
+      "nome": "Wellington Roberto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74043.jpg"
+    },
+    {
+      "id": 74044,
+      "siglaUf": "PB",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Wilson Santiago",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74044.jpg"
+    },
+    {
+      "id": 74057,
+      "siglaUf": "BA",
+      "siglaPartido": "PCDOB",
+      "nome": "Alice Portugal",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74057.jpg"
+    },
+    {
+      "id": 74060,
+      "siglaUf": "BA",
+      "siglaPartido": "PCDOB",
+      "nome": "Daniel Almeida",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74060.jpg"
+    },
+    {
+      "id": 74075,
+      "siglaUf": "PA",
+      "siglaPartido": "MDB",
+      "nome": "Elcione Barbalho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74075.jpg"
+    },
+    {
+      "id": 74079,
+      "siglaUf": "PA",
+      "siglaPartido": "MDB",
+      "nome": "José Priante",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74079.jpg"
+    },
+    {
+      "id": 74084,
+      "siglaUf": "PA",
+      "siglaPartido": "PSD",
+      "nome": "Raimundo Santos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74084.jpg"
+    },
+    {
+      "id": 74090,
+      "siglaUf": "AM",
+      "siglaPartido": "PSD",
+      "nome": "Átila Lins",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74090.jpg"
+    },
+    {
+      "id": 74156,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Leonardo Monteiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74156.jpg"
+    },
+    {
+      "id": 74158,
+      "siglaUf": "MG",
+      "siglaPartido": "PDT",
+      "nome": "Mário Heringer",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74158.jpg"
+    },
+    {
+      "id": 74160,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Patrus Ananias",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74160.jpg"
+    },
+    {
+      "id": 74161,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Reginaldo Lopes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74161.jpg"
+    },
+    {
+      "id": 74171,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSOL",
+      "nome": "Chico Alencar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74171.jpg"
+    },
+    {
+      "id": 74253,
+      "siglaUf": "RJ",
+      "siglaPartido": "PP",
+      "nome": "Julio Lopes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74253.jpg"
+    },
+    {
+      "id": 74262,
+      "siglaUf": "SP",
+      "siglaPartido": "PSD",
+      "nome": "Carlos Sampaio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74262.jpg"
+    },
+    {
+      "id": 74270,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Gilberto Nascimento",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74270.jpg"
+    },
+    {
+      "id": 74273,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Jefferson Campos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74273.jpg"
+    },
+    {
+      "id": 74295,
+      "siglaUf": "CE",
+      "siglaPartido": "PCDOB",
+      "nome": "Inácio Arruda",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74295.jpg"
+    },
+    {
+      "id": 74317,
+      "siglaUf": "PI",
+      "siglaPartido": "PSD",
+      "nome": "Júlio Cesar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74317.jpg"
+    },
+    {
+      "id": 74356,
+      "siglaUf": "AM",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Silas Câmara",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74356.jpg"
+    },
+    {
+      "id": 74371,
+      "siglaUf": "GO",
+      "siglaPartido": "PT",
+      "nome": "Rubens Otoni",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74371.jpg"
+    },
+    {
+      "id": 74374,
+      "siglaUf": "MS",
+      "siglaPartido": "UNIÃO",
+      "nome": "Geraldo Resende",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74374.jpg"
+    },
+    {
+      "id": 74376,
+      "siglaUf": "MS",
+      "siglaPartido": "PT",
+      "nome": "Vander Loubet",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74376.jpg"
+    },
+    {
+      "id": 74398,
+      "siglaUf": "RS",
+      "siglaPartido": "PT",
+      "nome": "Maria do Rosário",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74398.jpg"
+    },
+    {
+      "id": 74400,
+      "siglaUf": "RS",
+      "siglaPartido": "PT",
+      "nome": "Paulo Pimenta",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74400.jpg"
+    },
+    {
+      "id": 74428,
+      "siglaUf": "PE",
+      "siglaPartido": "PL",
+      "nome": "Mendonça Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74428.jpg"
+    },
+    {
+      "id": 74454,
+      "siglaUf": "CE",
+      "siglaPartido": "MDB",
+      "nome": "Eunício Oliveira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74454.jpg"
+    },
+    {
+      "id": 74467,
+      "siglaUf": "PB",
+      "siglaPartido": "UNIÃO",
+      "nome": "Damião Feliciano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74467.jpg"
+    },
+    {
+      "id": 74478,
+      "siglaUf": "PE",
+      "siglaPartido": "MDB",
+      "nome": "Luciano Bivar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74478.jpg"
+    },
+    {
+      "id": 74537,
+      "siglaUf": "BA",
+      "siglaPartido": "PP",
+      "nome": "Claudio Cajado",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74537.jpg"
+    },
+    {
+      "id": 74550,
+      "siglaUf": "BA",
+      "siglaPartido": "PP",
+      "nome": "João Leão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74550.jpg"
+    },
+    {
+      "id": 74554,
+      "siglaUf": "BA",
+      "siglaPartido": "UNIÃO",
+      "nome": "José Rocha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74554.jpg"
+    },
+    {
+      "id": 74574,
+      "siglaUf": "BA",
+      "siglaPartido": "PSD",
+      "nome": "Paulo Magalhães",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74574.jpg"
+    },
+    {
+      "id": 74581,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Gilmar Machado",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74581.jpg"
+    },
+    {
+      "id": 74585,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Lincoln Portela",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74585.jpg"
+    },
+    {
+      "id": 74646,
+      "siglaUf": "MG",
+      "siglaPartido": "PSDB",
+      "nome": "Aécio Neves",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74646.jpg"
+    },
+    {
+      "id": 74784,
+      "siglaUf": "SP",
+      "siglaPartido": "PSOL",
+      "nome": "Luiza Erundina",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74784.jpg"
+    },
+    {
+      "id": 74848,
+      "siglaUf": "RJ",
+      "siglaPartido": "PCDOB",
+      "nome": "Jandira Feghali",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74848.jpg"
+    },
+    {
+      "id": 74856,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSD",
+      "nome": "Laura Carneiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74856.jpg"
+    },
+    {
+      "id": 74858,
+      "siglaUf": "RJ",
+      "siglaPartido": "PT",
+      "nome": "Lindbergh Farias",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74858.jpg"
+    },
+    {
+      "id": 80815,
+      "siglaUf": "BA",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Leo Prates",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/80815.jpg"
+    },
+    {
+      "id": 81055,
+      "siglaUf": "MA",
+      "siglaPartido": "PCDOB",
+      "nome": "Márcio Jerry",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/81055.jpg"
+    },
+    {
+      "id": 88256,
+      "siglaUf": "PE",
+      "siglaPartido": "PV",
+      "nome": "Clodoaldo Magalhães",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/88256.jpg"
+    },
+    {
+      "id": 91228,
+      "siglaUf": "PE",
+      "siglaPartido": "AVANTE",
+      "nome": "Waldemar Oliveira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/91228.jpg"
+    },
+    {
+      "id": 92102,
+      "siglaUf": "BA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Leur Lomanto Júnior",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/92102.jpg"
+    },
+    {
+      "id": 92699,
+      "siglaUf": "PE",
+      "siglaPartido": "PSD",
+      "nome": "Fernando Monteiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/92699.jpg"
+    },
+    {
+      "id": 92776,
+      "siglaUf": "MG",
+      "siglaPartido": "PSD",
+      "nome": "Stefano Aguiar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/92776.jpg"
+    },
+    {
+      "id": 98057,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Lafayette de Andrada",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98057.jpg"
+    },
+    {
+      "id": 98148,
+      "siglaUf": "SC",
+      "siglaPartido": "MDB",
+      "nome": "Cobalchini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98148.jpg"
+    },
+    {
+      "id": 98615,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Ismael",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98615.jpg"
+    },
+    {
+      "id": 104552,
+      "siglaUf": "AC",
+      "siglaPartido": "PP",
+      "nome": "Socorro Neri",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/104552.jpg"
+    },
+    {
+      "id": 107283,
+      "siglaUf": "PR",
+      "siglaPartido": "PT",
+      "nome": "Gleisi Hoffmann",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/107283.jpg"
+    },
+    {
+      "id": 107970,
+      "siglaUf": "MG",
+      "siglaPartido": "PP",
+      "nome": "Ana Paula Leão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/107970.jpg"
+    },
+    {
+      "id": 109429,
+      "siglaUf": "RN",
+      "siglaPartido": "UNIÃO",
+      "nome": "Benes Leocádio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/109429.jpg"
+    },
+    {
+      "id": 121948,
+      "siglaUf": "GO",
+      "siglaPartido": "PP",
+      "nome": "Adriano do Baldy",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/121948.jpg"
+    },
+    {
+      "id": 122158,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSD",
+      "nome": "Pedro Paulo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/122158.jpg"
+    },
+    {
+      "id": 122195,
+      "siglaUf": "PB",
+      "siglaPartido": "PODE",
+      "nome": "Leonardo Gadelha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/122195.jpg"
+    },
+    {
+      "id": 122974,
+      "siglaUf": "MA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Pedro Lucas Fernandes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/122974.jpg"
+    },
+    {
+      "id": 123086,
+      "siglaUf": "PI",
+      "siglaPartido": "PP",
+      "nome": "Átila Lira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/123086.jpg"
+    },
+    {
+      "id": 123756,
+      "siglaUf": "AC",
+      "siglaPartido": "MDB",
+      "nome": "Antônia Lúcia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/123756.jpg"
+    },
+    {
+      "id": 133439,
+      "siglaUf": "CE",
+      "siglaPartido": "PDT",
+      "nome": "André Figueiredo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/133439.jpg"
+    },
+    {
+      "id": 133810,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Marcelo Moraes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/133810.jpg"
+    },
+    {
+      "id": 136811,
+      "siglaUf": "RS",
+      "siglaPartido": "PP",
+      "nome": "Afonso Hamm",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/136811.jpg"
+    },
+    {
+      "id": 137070,
+      "siglaUf": "TO",
+      "siglaPartido": "PSDB",
+      "nome": "Vicentinho Júnior",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/137070.jpg"
+    },
+    {
+      "id": 139285,
+      "siglaUf": "BA",
+      "siglaPartido": "PSB",
+      "nome": "Lídice da Mata",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/139285.jpg"
+    },
+    {
+      "id": 141391,
+      "siglaUf": "SP",
+      "siglaPartido": "CIDADANIA",
+      "nome": "Arnaldo Jardim",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141391.jpg"
+    },
+    {
+      "id": 141398,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Carlos Zarattini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141398.jpg"
+    },
+    {
+      "id": 141408,
+      "siglaUf": "MA",
+      "siglaPartido": "MDB",
+      "nome": "Cleber Verde",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141408.jpg"
+    },
+    {
+      "id": 141411,
+      "siglaUf": "MS",
+      "siglaPartido": "PP",
+      "nome": "Dagoberto Nogueira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141411.jpg"
+    },
+    {
+      "id": 141421,
+      "siglaUf": "PE",
+      "siglaPartido": "PP",
+      "nome": "Eduardo da Fonte",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141421.jpg"
+    },
+    {
+      "id": 141431,
+      "siglaUf": "PE",
+      "siglaPartido": "UNIÃO",
+      "nome": "Fernando Coelho Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141431.jpg"
+    },
+    {
+      "id": 141450,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSD",
+      "nome": "Hugo Leal",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141450.jpg"
+    },
+    {
+      "id": 141456,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Jilmar Tatto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141456.jpg"
+    },
+    {
+      "id": 141458,
+      "siglaUf": "BA",
+      "siglaPartido": "PL",
+      "nome": "João Carlos Bacelar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141458.jpg"
+    },
+    {
+      "id": 141459,
+      "siglaUf": "RN",
+      "siglaPartido": "PP",
+      "nome": "João Maia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141459.jpg"
+    },
+    {
+      "id": 141464,
+      "siglaUf": "CE",
+      "siglaPartido": "PT",
+      "nome": "José Airton Félix Cirilo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141464.jpg"
+    },
+    {
+      "id": 141485,
+      "siglaUf": "RS",
+      "siglaPartido": "UNIÃO",
+      "nome": "Luiz Carlos Busato",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141485.jpg"
+    },
+    {
+      "id": 141487,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Luiz Fernando Faria",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141487.jpg"
+    },
+    {
+      "id": 141488,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Paulo Teixeira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141488.jpg"
+    },
+    {
+      "id": 141516,
+      "siglaUf": "MG",
+      "siglaPartido": "PSDB",
+      "nome": "Paulo Abi-Ackel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141516.jpg"
+    },
+    {
+      "id": 141518,
+      "siglaUf": "SP",
+      "siglaPartido": "SOLIDARIEDADE",
+      "nome": "Paulinho da Força",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141518.jpg"
+    },
+    {
+      "id": 141531,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Rodrigo de Castro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141531.jpg"
+    },
+    {
+      "id": 141533,
+      "siglaUf": "DF",
+      "siglaPartido": "PSB",
+      "nome": "Rodrigo Rollemberg",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141533.jpg"
+    },
+    {
+      "id": 141555,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Vinicius Carvalho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141555.jpg"
+    },
+    {
+      "id": 143084,
+      "siglaUf": "TO",
+      "siglaPartido": "PODE",
+      "nome": "Tiago Dimas",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/143084.jpg"
+    },
+    {
+      "id": 143632,
+      "siglaUf": "CE",
+      "siglaPartido": "PSD",
+      "nome": "Domingos Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/143632.jpg"
+    },
+    {
+      "id": 150418,
+      "siglaUf": "BA",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Márcio Marinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/150418.jpg"
+    },
+    {
+      "id": 152605,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSOL",
+      "nome": "Glauber Braga",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/152605.jpg"
+    },
+    {
+      "id": 153423,
+      "siglaUf": "PA",
+      "siglaPartido": "MDB",
+      "nome": "Renilce Nicodemos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/153423.jpg"
+    },
+    {
+      "id": 154178,
+      "siglaUf": "SP",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Milton Vieira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/154178.jpg"
+    },
+    {
+      "id": 156190,
+      "siglaUf": "RS",
+      "siglaPartido": "NOVO",
+      "nome": "Marcel van Hattem",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/156190.jpg"
+    },
+    {
+      "id": 157130,
+      "siglaUf": "PE",
+      "siglaPartido": "PSD",
+      "nome": "Túlio Gadêlha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/157130.jpg"
+    },
+    {
+      "id": 160161,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSDB",
+      "nome": "Marcelo Queiroz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160161.jpg"
+    },
+    {
+      "id": 160508,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Afonso Florence",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160508.jpg"
+    },
+    {
+      "id": 160510,
+      "siglaUf": "MG",
+      "siglaPartido": "AVANTE",
+      "nome": "Luis Tibé",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160510.jpg"
+    },
+    {
+      "id": 160512,
+      "siglaUf": "RJ",
+      "siglaPartido": "SOLIDARIEDADE",
+      "nome": "Aureo Ribeiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160512.jpg"
+    },
+    {
+      "id": 160517,
+      "siglaUf": "ES",
+      "siglaPartido": "PSB",
+      "nome": "Paulo Folletto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160517.jpg"
+    },
+    {
+      "id": 160518,
+      "siglaUf": "MG",
+      "siglaPartido": "PSD",
+      "nome": "Weliton Prado",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160518.jpg"
+    },
+    {
+      "id": 160527,
+      "siglaUf": "PB",
+      "siglaPartido": "PP",
+      "nome": "Aguinaldo Ribeiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160527.jpg"
+    },
+    {
+      "id": 160535,
+      "siglaUf": "RS",
+      "siglaPartido": "PT",
+      "nome": "Marcon",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160535.jpg"
+    },
+    {
+      "id": 160538,
+      "siglaUf": "RS",
+      "siglaPartido": "PT",
+      "nome": "Bohn Gass",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160538.jpg"
+    },
+    {
+      "id": 160541,
+      "siglaUf": "AL",
+      "siglaPartido": "PP",
+      "nome": "Arthur Lira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160541.jpg"
+    },
+    {
+      "id": 160545,
+      "siglaUf": "SP",
+      "siglaPartido": "UNIÃO",
+      "nome": "Alexandre Leite",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160545.jpg"
+    },
+    {
+      "id": 160548,
+      "siglaUf": "SP",
+      "siglaPartido": "PSB",
+      "nome": "Jonas Donizette",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160548.jpg"
+    },
+    {
+      "id": 160552,
+      "siglaUf": "RS",
+      "siglaPartido": "PSD",
+      "nome": "Danrlei de Deus Hinterholz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160552.jpg"
+    },
+    {
+      "id": 160553,
+      "siglaUf": "BA",
+      "siglaPartido": "PSD",
+      "nome": "Antonio Brito",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160553.jpg"
+    },
+    {
+      "id": 160556,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Padre João",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160556.jpg"
+    },
+    {
+      "id": 160558,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Paulo Freire Costa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160558.jpg"
+    },
+    {
+      "id": 160559,
+      "siglaUf": "RS",
+      "siglaPartido": "MDB",
+      "nome": "Alceu Moreira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160559.jpg"
+    },
+    {
+      "id": 160561,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Missionário José Olimpio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160561.jpg"
+    },
+    {
+      "id": 160569,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Waldenor Pereira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160569.jpg"
+    },
+    {
+      "id": 160575,
+      "siglaUf": "DF",
+      "siglaPartido": "PT",
+      "nome": "Erika Kokay",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160575.jpg"
+    },
+    {
+      "id": 160588,
+      "siglaUf": "MG",
+      "siglaPartido": "PSD",
+      "nome": "Diego Andrade",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160588.jpg"
+    },
+    {
+      "id": 160591,
+      "siglaUf": "AP",
+      "siglaPartido": "PL",
+      "nome": "Vinicius Gurgel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160591.jpg"
+    },
+    {
+      "id": 160592,
+      "siglaUf": "PR",
+      "siglaPartido": "PT",
+      "nome": "Zeca Dirceu",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160592.jpg"
+    },
+    {
+      "id": 160598,
+      "siglaUf": "GO",
+      "siglaPartido": "MDB",
+      "nome": "Flávia Morais",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160598.jpg"
+    },
+    {
+      "id": 160599,
+      "siglaUf": "MG",
+      "siglaPartido": "PP",
+      "nome": "Dimas Fabiano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160599.jpg"
+    },
+    {
+      "id": 160600,
+      "siglaUf": "BA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Arthur Oliveira Maia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160600.jpg"
+    },
+    {
+      "id": 160601,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Pr. Marco Feliciano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160601.jpg"
+    },
+    {
+      "id": 160604,
+      "siglaUf": "SC",
+      "siglaPartido": "PT",
+      "nome": "Pedro Uczai",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160604.jpg"
+    },
+    {
+      "id": 160610,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Valmir Assunção",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160610.jpg"
+    },
+    {
+      "id": 160621,
+      "siglaUf": "PR",
+      "siglaPartido": "PSD",
+      "nome": "Sandro Alex",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160621.jpg"
+    },
+    {
+      "id": 160632,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Zé Silva",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160632.jpg"
+    },
+    {
+      "id": 160635,
+      "siglaUf": "PB",
+      "siglaPartido": "PODE",
+      "nome": "Ruy Carneiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160635.jpg"
+    },
+    {
+      "id": 160640,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Eros Biondini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160640.jpg"
+    },
+    {
+      "id": 160641,
+      "siglaUf": "AP",
+      "siglaPartido": "PCDOB",
+      "nome": "Professora Marcivania",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160641.jpg"
+    },
+    {
+      "id": 160642,
+      "siglaUf": "PE",
+      "siglaPartido": "PSDB",
+      "nome": "Pastor Eurico",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160642.jpg"
+    },
+    {
+      "id": 160665,
+      "siglaUf": "PE",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Augusto Coutinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160665.jpg"
+    },
+    {
+      "id": 160666,
+      "siglaUf": "BA",
+      "siglaPartido": "PDT",
+      "nome": "Félix Mendonça Júnior",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160666.jpg"
+    },
+    {
+      "id": 160673,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Giovani Cherini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160673.jpg"
+    },
+    {
+      "id": 160674,
+      "siglaUf": "PB",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Hugo Motta",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160674.jpg"
+    },
+    {
+      "id": 160758,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Domingos Sávio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160758.jpg"
+    },
+    {
+      "id": 160976,
+      "siglaUf": "SP",
+      "siglaPartido": "PSD",
+      "nome": "Tiririca",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160976.jpg"
+    },
+    {
+      "id": 161440,
+      "siglaUf": "SC",
+      "siglaPartido": "MDB",
+      "nome": "Pezenti",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/161440.jpg"
+    },
+    {
+      "id": 161550,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Emidinho Madeira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/161550.jpg"
+    },
+    {
+      "id": 162067,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Kiko Celeguim",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/162067.jpg"
+    },
+    {
+      "id": 162332,
+      "siglaUf": "PR",
+      "siglaPartido": "PSD",
+      "nome": "Luiz Nishimori",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/162332.jpg"
+    },
+    {
+      "id": 165470,
+      "siglaUf": "SE",
+      "siglaPartido": "PL",
+      "nome": "Rodrigo Valadares",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/165470.jpg"
+    },
+    {
+      "id": 166402,
+      "siglaUf": "GO",
+      "siglaPartido": "PL",
+      "nome": "Magda Mofatto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/166402.jpg"
+    },
+    {
+      "id": 171617,
+      "siglaUf": "AL",
+      "siglaPartido": "PT",
+      "nome": "Paulão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171617.jpg"
+    },
+    {
+      "id": 171623,
+      "siglaUf": "SE",
+      "siglaPartido": "PSD",
+      "nome": "Fabio Reis",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171623.jpg"
+    },
+    {
+      "id": 171786,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Miguel Ângelo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171786.jpg"
+    },
+    {
+      "id": 175765,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Ribamar Silva",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/175765.jpg"
+    },
+    {
+      "id": 178829,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Capitão Augusto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178829.jpg"
+    },
+    {
+      "id": 178831,
+      "siglaUf": "AP",
+      "siglaPartido": "PP",
+      "nome": "André Abdon",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178831.jpg"
+    },
+    {
+      "id": 178832,
+      "siglaUf": "PR",
+      "siglaPartido": "PSD",
+      "nome": "Leandre",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178832.jpg"
+    },
+    {
+      "id": 178835,
+      "siglaUf": "RS",
+      "siglaPartido": "PDT",
+      "nome": "Afonso Motta",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178835.jpg"
+    },
+    {
+      "id": 178843,
+      "siglaUf": "AL",
+      "siglaPartido": "UNIÃO",
+      "nome": "Marx Beltrão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178843.jpg"
+    },
+    {
+      "id": 178854,
+      "siglaUf": "BA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Elmar Nascimento",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178854.jpg"
+    },
+    {
+      "id": 178857,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Jorge Solla",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178857.jpg"
+    },
+    {
+      "id": 178858,
+      "siglaUf": "BA",
+      "siglaPartido": "PSB",
+      "nome": "Mário Negromonte Jr.",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178858.jpg"
+    },
+    {
+      "id": 178860,
+      "siglaUf": "BA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Paulo Azi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178860.jpg"
+    },
+    {
+      "id": 178866,
+      "siglaUf": "CE",
+      "siglaPartido": "REDE",
+      "nome": "Luizianne Lins",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178866.jpg"
+    },
+    {
+      "id": 178871,
+      "siglaUf": "ES",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Evair Vieira de Melo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178871.jpg"
+    },
+    {
+      "id": 178873,
+      "siglaUf": "ES",
+      "siglaPartido": "PT",
+      "nome": "Helder Salomão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178873.jpg"
+    },
+    {
+      "id": 178876,
+      "siglaUf": "GO",
+      "siglaPartido": "MDB",
+      "nome": "Célio Silveira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178876.jpg"
+    },
+    {
+      "id": 178881,
+      "siglaUf": "MA",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Aluisio Mendes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178881.jpg"
+    },
+    {
+      "id": 178882,
+      "siglaUf": "MA",
+      "siglaPartido": "PP",
+      "nome": "André Fufuca",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178882.jpg"
+    },
+    {
+      "id": 178884,
+      "siglaUf": "MA",
+      "siglaPartido": "MDB",
+      "nome": "Hildo Rocha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178884.jpg"
+    },
+    {
+      "id": 178886,
+      "siglaUf": "MA",
+      "siglaPartido": "PSDB",
+      "nome": "Juscelino Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178886.jpg"
+    },
+    {
+      "id": 178887,
+      "siglaUf": "MA",
+      "siglaPartido": "PT",
+      "nome": "Rubens Pereira Júnior",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178887.jpg"
+    },
+    {
+      "id": 178895,
+      "siglaUf": "MG",
+      "siglaPartido": "PSD",
+      "nome": "Misael Varella",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178895.jpg"
+    },
+    {
+      "id": 178896,
+      "siglaUf": "MG",
+      "siglaPartido": "MDB",
+      "nome": "Newton Cardoso Jr",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178896.jpg"
+    },
+    {
+      "id": 178905,
+      "siglaUf": "MT",
+      "siglaPartido": "UNIÃO",
+      "nome": "Fabio Garcia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178905.jpg"
+    },
+    {
+      "id": 178908,
+      "siglaUf": "PA",
+      "siglaPartido": "PL",
+      "nome": "Delegado Éder Mauro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178908.jpg"
+    },
+    {
+      "id": 178910,
+      "siglaUf": "PA",
+      "siglaPartido": "PL",
+      "nome": "Joaquim Passarinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178910.jpg"
+    },
+    {
+      "id": 178927,
+      "siglaUf": "PR",
+      "siglaPartido": "PV",
+      "nome": "Aliel Machado",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178927.jpg"
+    },
+    {
+      "id": 178929,
+      "siglaUf": "PR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Diego Garcia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178929.jpg"
+    },
+    {
+      "id": 178931,
+      "siglaUf": "PR",
+      "siglaPartido": "PSB",
+      "nome": "Luciano Ducci",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178931.jpg"
+    },
+    {
+      "id": 178933,
+      "siglaUf": "PR",
+      "siglaPartido": "MDB",
+      "nome": "Sergio Souza",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178933.jpg"
+    },
+    {
+      "id": 178934,
+      "siglaUf": "PR",
+      "siglaPartido": "PP",
+      "nome": "Toninho Wandscheer",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178934.jpg"
+    },
+    {
+      "id": 178937,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Altineu Côrtes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178937.jpg"
+    },
+    {
+      "id": 178943,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSDB",
+      "nome": "Marcos Soares",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178943.jpg"
+    },
+    {
+      "id": 178945,
+      "siglaUf": "RJ",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Rosangela Gomes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178945.jpg"
+    },
+    {
+      "id": 178946,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Soraya Santos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178946.jpg"
+    },
+    {
+      "id": 178947,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Sóstenes Cavalcante",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178947.jpg"
+    },
+    {
+      "id": 178954,
+      "siglaUf": "RO",
+      "siglaPartido": "PL",
+      "nome": "Lucio Mosquini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178954.jpg"
+    },
+    {
+      "id": 178962,
+      "siglaUf": "RS",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Carlos Gomes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178962.jpg"
+    },
+    {
+      "id": 178963,
+      "siglaUf": "RS",
+      "siglaPartido": "PP",
+      "nome": "Covatti Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178963.jpg"
+    },
+    {
+      "id": 178964,
+      "siglaUf": "RS",
+      "siglaPartido": "PSD",
+      "nome": "Heitor Schuch",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178964.jpg"
+    },
+    {
+      "id": 178966,
+      "siglaUf": "SC",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Geovania de Sá",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178966.jpg"
+    },
+    {
+      "id": 178970,
+      "siglaUf": "SE",
+      "siglaPartido": "PT",
+      "nome": "João Daniel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178970.jpg"
+    },
+    {
+      "id": 178972,
+      "siglaUf": "SP",
+      "siglaPartido": "CIDADANIA",
+      "nome": "Alex Manente",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178972.jpg"
+    },
+    {
+      "id": 178975,
+      "siglaUf": "SP",
+      "siglaPartido": "MDB",
+      "nome": "Baleia Rossi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178975.jpg"
+    },
+    {
+      "id": 178983,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Marcio Alvino",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178983.jpg"
+    },
+    {
+      "id": 178985,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Miguel Lombardi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178985.jpg"
+    },
+    {
+      "id": 178986,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Nilto Tatto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178986.jpg"
+    },
+    {
+      "id": 178987,
+      "siglaUf": "SP",
+      "siglaPartido": "PCDOB",
+      "nome": "Orlando Silva",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178987.jpg"
+    },
+    {
+      "id": 178989,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Renata Abreu",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178989.jpg"
+    },
+    {
+      "id": 178992,
+      "siglaUf": "SP",
+      "siglaPartido": "PSD",
+      "nome": "Vitor Lippi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178992.jpg"
+    },
+    {
+      "id": 178993,
+      "siglaUf": "TO",
+      "siglaPartido": "UNIÃO",
+      "nome": "Carlos Henrique Gaguim",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178993.jpg"
+    },
+    {
+      "id": 178997,
+      "siglaUf": "CE",
+      "siglaPartido": "UNIÃO",
+      "nome": "Moses Rodrigues",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178997.jpg"
+    },
+    {
+      "id": 179000,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Marcelo Álvaro Antônio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/179000.jpg"
+    },
+    {
+      "id": 179001,
+      "siglaUf": "RS",
+      "siglaPartido": "MDB",
+      "nome": "Márcio Biolchi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/179001.jpg"
+    },
+    {
+      "id": 180214,
+      "siglaUf": "RR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Pastor Diniz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/180214.jpg"
+    },
+    {
+      "id": 188097,
+      "siglaUf": "PI",
+      "siglaPartido": "PT",
+      "nome": "Merlong Solano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/188097.jpg"
+    },
+    {
+      "id": 191923,
+      "siglaUf": "PI",
+      "siglaPartido": "PT",
+      "nome": "Flávio Nogueira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/191923.jpg"
+    },
+    {
+      "id": 198197,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Greyce Elias",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/198197.jpg"
+    },
+    {
+      "id": 198783,
+      "siglaUf": "MT",
+      "siglaPartido": "PSD",
+      "nome": "Emanuel Pinheiro Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/198783.jpg"
+    },
+    {
+      "id": 204351,
+      "siglaUf": "MS",
+      "siglaPartido": "PP",
+      "nome": "Dr. Luiz Ovando",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204351.jpg"
+    },
+    {
+      "id": 204353,
+      "siglaUf": "AP",
+      "siglaPartido": "UNIÃO",
+      "nome": "Aline Gurgel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204353.jpg"
+    },
+    {
+      "id": 204355,
+      "siglaUf": "ES",
+      "siglaPartido": "PP",
+      "nome": "Da Vitoria",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204355.jpg"
+    },
+    {
+      "id": 204356,
+      "siglaUf": "ES",
+      "siglaPartido": "PP",
+      "nome": "Amaro Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204356.jpg"
+    },
+    {
+      "id": 204358,
+      "siglaUf": "MS",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Beto Pereira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204358.jpg"
+    },
+    {
+      "id": 204360,
+      "siglaUf": "RO",
+      "siglaPartido": "PP",
+      "nome": "Silvia Cristina",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204360.jpg"
+    },
+    {
+      "id": 204361,
+      "siglaUf": "SC",
+      "siglaPartido": "MDB",
+      "nome": "Carlos Chiodini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204361.jpg"
+    },
+    {
+      "id": 204362,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Ricardo Guidi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204362.jpg"
+    },
+    {
+      "id": 204364,
+      "siglaUf": "TO",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Eli Borges",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204364.jpg"
+    },
+    {
+      "id": 204365,
+      "siglaUf": "SC",
+      "siglaPartido": "NOVO",
+      "nome": "Gilson Marques",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204365.jpg"
+    },
+    {
+      "id": 204367,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Daniel Freitas",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204367.jpg"
+    },
+    {
+      "id": 204368,
+      "siglaUf": "SC",
+      "siglaPartido": "UNIÃO",
+      "nome": "Fabio Schiochet",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204368.jpg"
+    },
+    {
+      "id": 204369,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Caroline de Toni",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204369.jpg"
+    },
+    {
+      "id": 204372,
+      "siglaUf": "DF",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Julio Cesar Ribeiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204372.jpg"
+    },
+    {
+      "id": 204374,
+      "siglaUf": "DF",
+      "siglaPartido": "PL",
+      "nome": "Bia Kicis",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204374.jpg"
+    },
+    {
+      "id": 204378,
+      "siglaUf": "RO",
+      "siglaPartido": "PL",
+      "nome": "Coronel Chrisóstomo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204378.jpg"
+    },
+    {
+      "id": 204379,
+      "siglaUf": "AP",
+      "siglaPartido": "MDB",
+      "nome": "Acácio Favacho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204379.jpg"
+    },
+    {
+      "id": 204387,
+      "siglaUf": "PR",
+      "siglaPartido": "PL",
+      "nome": "Sargento Fahur",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204387.jpg"
+    },
+    {
+      "id": 204388,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Bibo Nunes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204388.jpg"
+    },
+    {
+      "id": 204390,
+      "siglaUf": "GO",
+      "siglaPartido": "PSDB",
+      "nome": "Professor Alcides",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204390.jpg"
+    },
+    {
+      "id": 204391,
+      "siglaUf": "GO",
+      "siglaPartido": "UNIÃO",
+      "nome": "José Nelto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204391.jpg"
+    },
+    {
+      "id": 204394,
+      "siglaUf": "PB",
+      "siglaPartido": "PCDOB",
+      "nome": "Gervásio Maia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204394.jpg"
+    },
+    {
+      "id": 204395,
+      "siglaUf": "PR",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Pedro Lupion",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204395.jpg"
+    },
+    {
+      "id": 204396,
+      "siglaUf": "PR",
+      "siglaPartido": "PL",
+      "nome": "Vermelho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204396.jpg"
+    },
+    {
+      "id": 204398,
+      "siglaUf": "PR",
+      "siglaPartido": "PODE",
+      "nome": "Felipe Francischini",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204398.jpg"
+    },
+    {
+      "id": 204404,
+      "siglaUf": "RS",
+      "siglaPartido": "PSD",
+      "nome": "Lucas Redecker",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204404.jpg"
+    },
+    {
+      "id": 204406,
+      "siglaUf": "RS",
+      "siglaPartido": "PP",
+      "nome": "Pedro Westphalen",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204406.jpg"
+    },
+    {
+      "id": 204407,
+      "siglaUf": "RS",
+      "siglaPartido": "PSOL",
+      "nome": "Fernanda Melchionna",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204407.jpg"
+    },
+    {
+      "id": 204408,
+      "siglaUf": "SE",
+      "siglaPartido": "PP",
+      "nome": "Gustinho Ribeiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204408.jpg"
+    },
+    {
+      "id": 204409,
+      "siglaUf": "RS",
+      "siglaPartido": "PSDB",
+      "nome": "Daniel Trzeciak",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204409.jpg"
+    },
+    {
+      "id": 204410,
+      "siglaUf": "PR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Luisa Canziani",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204410.jpg"
+    },
+    {
+      "id": 204411,
+      "siglaUf": "PR",
+      "siglaPartido": "PL",
+      "nome": "Filipe Barros",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204411.jpg"
+    },
+    {
+      "id": 204412,
+      "siglaUf": "GO",
+      "siglaPartido": "MDB",
+      "nome": "Dr. Zacharias Calil",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204412.jpg"
+    },
+    {
+      "id": 204416,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Sanderson",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204416.jpg"
+    },
+    {
+      "id": 204419,
+      "siglaUf": "GO",
+      "siglaPartido": "PODE",
+      "nome": "Glaustin da Fokus",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204419.jpg"
+    },
+    {
+      "id": 204423,
+      "siglaUf": "PE",
+      "siglaPartido": "PL",
+      "nome": "André Ferreira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204423.jpg"
+    },
+    {
+      "id": 204425,
+      "siglaUf": "PE",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Silvio Costa Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204425.jpg"
+    },
+    {
+      "id": 204426,
+      "siglaUf": "PE",
+      "siglaPartido": "PT",
+      "nome": "Carlos Veras",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204426.jpg"
+    },
+    {
+      "id": 204427,
+      "siglaUf": "PE",
+      "siglaPartido": "PRD",
+      "nome": "Fernando Rodolfo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204427.jpg"
+    },
+    {
+      "id": 204431,
+      "siglaUf": "PI",
+      "siglaPartido": "MDB",
+      "nome": "Marcos Aurélio Sampaio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204431.jpg"
+    },
+    {
+      "id": 204436,
+      "siglaUf": "AL",
+      "siglaPartido": "MDB",
+      "nome": "Isnaldo Bulhões Jr.",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204436.jpg"
+    },
+    {
+      "id": 204441,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSD",
+      "nome": "Otoni de Paula",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204441.jpg"
+    },
+    {
+      "id": 204444,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Helio Lopes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204444.jpg"
+    },
+    {
+      "id": 204445,
+      "siglaUf": "RN",
+      "siglaPartido": "PT",
+      "nome": "Fernando Mineiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204445.jpg"
+    },
+    {
+      "id": 204449,
+      "siglaUf": "MT",
+      "siglaPartido": "PODE",
+      "nome": "Nelson Barbudo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204449.jpg"
+    },
+    {
+      "id": 204450,
+      "siglaUf": "RJ",
+      "siglaPartido": "PP",
+      "nome": "Doutor Luizinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204450.jpg"
+    },
+    {
+      "id": 204453,
+      "siglaUf": "RN",
+      "siglaPartido": "PT",
+      "nome": "Natália Bonavides",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204453.jpg"
+    },
+    {
+      "id": 204455,
+      "siglaUf": "RJ",
+      "siglaPartido": "NOVO",
+      "nome": "Luiz Lima",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204455.jpg"
+    },
+    {
+      "id": 204456,
+      "siglaUf": "RJ",
+      "siglaPartido": "MDB",
+      "nome": "Gutemberg Reis",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204456.jpg"
+    },
+    {
+      "id": 204457,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSDB",
+      "nome": "Juninho do Pneu",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204457.jpg"
+    },
+    {
+      "id": 204459,
+      "siglaUf": "RJ",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Daniela do Waguinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204459.jpg"
+    },
+    {
+      "id": 204460,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Carlos Jordy",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204460.jpg"
+    },
+    {
+      "id": 204462,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Chris Tonietto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204462.jpg"
+    },
+    {
+      "id": 204464,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSOL",
+      "nome": "Talíria Petrone",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204464.jpg"
+    },
+    {
+      "id": 204472,
+      "siglaUf": "MT",
+      "siglaPartido": "PL",
+      "nome": "José Medeiros",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204472.jpg"
+    },
+    {
+      "id": 204473,
+      "siglaUf": "RN",
+      "siglaPartido": "PL",
+      "nome": "General Girão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204473.jpg"
+    },
+    {
+      "id": 204474,
+      "siglaUf": "MT",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Juarez Costa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204474.jpg"
+    },
+    {
+      "id": 204479,
+      "siglaUf": "RR",
+      "siglaPartido": "PL",
+      "nome": "Nicoletti",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204479.jpg"
+    },
+    {
+      "id": 204480,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Rogério Correia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204480.jpg"
+    },
+    {
+      "id": 204481,
+      "siglaUf": "CE",
+      "siglaPartido": "PL",
+      "nome": "Dr. Jaziel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204481.jpg"
+    },
+    {
+      "id": 204482,
+      "siglaUf": "MG",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Euclydes Pettersen",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204482.jpg"
+    },
+    {
+      "id": 204485,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Luiz Carlos Motta",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204485.jpg"
+    },
+    {
+      "id": 204486,
+      "siglaUf": "CE",
+      "siglaPartido": "UNIÃO",
+      "nome": "Mauro Benevides Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204486.jpg"
+    },
+    {
+      "id": 204488,
+      "siglaUf": "CE",
+      "siglaPartido": "PSD",
+      "nome": "Célio Studart",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204488.jpg"
+    },
+    {
+      "id": 204489,
+      "siglaUf": "CE",
+      "siglaPartido": "PSB",
+      "nome": "Robério Monteiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204489.jpg"
+    },
+    {
+      "id": 204491,
+      "siglaUf": "MG",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Gilberto Abramo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204491.jpg"
+    },
+    {
+      "id": 204492,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Paulo Guedes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204492.jpg"
+    },
+    {
+      "id": 204494,
+      "siglaUf": "MG",
+      "siglaPartido": "PRD",
+      "nome": "Fred Costa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204494.jpg"
+    },
+    {
+      "id": 204495,
+      "siglaUf": "PA",
+      "siglaPartido": "PT",
+      "nome": "Airton Faleiro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204495.jpg"
+    },
+    {
+      "id": 204496,
+      "siglaUf": "PA",
+      "siglaPartido": "PDT",
+      "nome": "Celso Sabino",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204496.jpg"
+    },
+    {
+      "id": 204497,
+      "siglaUf": "PA",
+      "siglaPartido": "PSD",
+      "nome": "Júnior Ferrari",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204497.jpg"
+    },
+    {
+      "id": 204498,
+      "siglaUf": "PA",
+      "siglaPartido": "PODE",
+      "nome": "Olival Marques",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204498.jpg"
+    },
+    {
+      "id": 204501,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Alencar Santana",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204501.jpg"
+    },
+    {
+      "id": 204504,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Cezinha de Madureira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204504.jpg"
+    },
+    {
+      "id": 204506,
+      "siglaUf": "SP",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Marcos Pereira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204506.jpg"
+    },
+    {
+      "id": 204508,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Igor Timo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204508.jpg"
+    },
+    {
+      "id": 204511,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "David Soares",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204511.jpg"
+    },
+    {
+      "id": 204512,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Delegado Marcelo Freitas",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204512.jpg"
+    },
+    {
+      "id": 204515,
+      "siglaUf": "MG",
+      "siglaPartido": "REDE",
+      "nome": "André Janones",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204515.jpg"
+    },
+    {
+      "id": 204517,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Zé Vitor",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204517.jpg"
+    },
+    {
+      "id": 204518,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Dr. Frederico",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204518.jpg"
+    },
+    {
+      "id": 204520,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Junio Amaral",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204520.jpg"
+    },
+    {
+      "id": 204524,
+      "siglaUf": "MG",
+      "siglaPartido": "PP",
+      "nome": "Pinheirinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204524.jpg"
+    },
+    {
+      "id": 204525,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Rosana Valle",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204525.jpg"
+    },
+    {
+      "id": 204526,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Luiz Philippe de Orleans e Bragança",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204526.jpg"
+    },
+    {
+      "id": 204528,
+      "siglaUf": "SP",
+      "siglaPartido": "NOVO",
+      "nome": "Adriana Ventura",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204528.jpg"
+    },
+    {
+      "id": 204531,
+      "siglaUf": "SP",
+      "siglaPartido": "PP",
+      "nome": "Guilherme Derrite",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204531.jpg"
+    },
+    {
+      "id": 204533,
+      "siglaUf": "CE",
+      "siglaPartido": "PSB",
+      "nome": "Idilvan Alencar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204533.jpg"
+    },
+    {
+      "id": 204534,
+      "siglaUf": "SP",
+      "siglaPartido": "PSB",
+      "nome": "Tabata Amaral",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204534.jpg"
+    },
+    {
+      "id": 204535,
+      "siglaUf": "SP",
+      "siglaPartido": "PSOL",
+      "nome": "Sâmia Bomfim",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204535.jpg"
+    },
+    {
+      "id": 204536,
+      "siglaUf": "SP",
+      "siglaPartido": "MISSÃO",
+      "nome": "Kim Kataguiri",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204536.jpg"
+    },
+    {
+      "id": 204539,
+      "siglaUf": "MG",
+      "siglaPartido": "MDB",
+      "nome": "Hercílio Coelho Diniz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204539.jpg"
+    },
+    {
+      "id": 204540,
+      "siglaUf": "SP",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Maria Rosas",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204540.jpg"
+    },
+    {
+      "id": 204541,
+      "siglaUf": "CE",
+      "siglaPartido": "PV",
+      "nome": "Eduardo Bismarck",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204541.jpg"
+    },
+    {
+      "id": 204549,
+      "siglaUf": "CE",
+      "siglaPartido": "PP",
+      "nome": "AJ Albuquerque",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204549.jpg"
+    },
+    {
+      "id": 204550,
+      "siglaUf": "CE",
+      "siglaPartido": "PSB",
+      "nome": "Júnior Mano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204550.jpg"
+    },
+    {
+      "id": 204553,
+      "siglaUf": "BA",
+      "siglaPartido": "AVANTE",
+      "nome": "Pastor Sargento Isidório",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204553.jpg"
+    },
+    {
+      "id": 204557,
+      "siglaUf": "AM",
+      "siglaPartido": "PSD",
+      "nome": "Sidney Leite",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204557.jpg"
+    },
+    {
+      "id": 204558,
+      "siglaUf": "BA",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Marcelo Nilo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204558.jpg"
+    },
+    {
+      "id": 204559,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Zé Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204559.jpg"
+    },
+    {
+      "id": 204560,
+      "siglaUf": "BA",
+      "siglaPartido": "PSDB",
+      "nome": "Adolfo Viana",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204560.jpg"
+    },
+    {
+      "id": 204563,
+      "siglaUf": "MA",
+      "siglaPartido": "PL",
+      "nome": "Josimar Maranhãozinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204563.jpg"
+    },
+    {
+      "id": 204566,
+      "siglaUf": "MA",
+      "siglaPartido": "PRD",
+      "nome": "Marreca Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204566.jpg"
+    },
+    {
+      "id": 204567,
+      "siglaUf": "BA",
+      "siglaPartido": "PSD",
+      "nome": "Raimundo Costa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204567.jpg"
+    },
+    {
+      "id": 204570,
+      "siglaUf": "MA",
+      "siglaPartido": "PL",
+      "nome": "Pastor Gil",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204570.jpg"
+    },
+    {
+      "id": 204572,
+      "siglaUf": "AM",
+      "siglaPartido": "PL",
+      "nome": "Capitão Alberto Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204572.jpg"
+    },
+    {
+      "id": 204574,
+      "siglaUf": "MA",
+      "siglaPartido": "MDB",
+      "nome": "Junior Lourenço",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204574.jpg"
+    },
+    {
+      "id": 205476,
+      "siglaUf": "BA",
+      "siglaPartido": "PSD",
+      "nome": "Charles Fernandes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/205476.jpg"
+    },
+    {
+      "id": 205550,
+      "siglaUf": "RJ",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Jorge Braz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/205550.jpg"
+    },
+    {
+      "id": 206018,
+      "siglaUf": "MG",
+      "siglaPartido": "PSOL",
+      "nome": "Célia Xakriabá",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/206018.jpg"
+    },
+    {
+      "id": 209189,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Joseildo Ramos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/209189.jpg"
+    },
+    {
+      "id": 209787,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Nikolas Ferreira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/209787.jpg"
+    },
+    {
+      "id": 210989,
+      "siglaUf": "MG",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Bruno Farias",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/210989.jpg"
+    },
+    {
+      "id": 213762,
+      "siglaUf": "RN",
+      "siglaPartido": "PL",
+      "nome": "Carla Dickson",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/213762.jpg"
+    },
+    {
+      "id": 214694,
+      "siglaUf": "SC",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Jorge Goetten",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/214694.jpg"
+    },
+    {
+      "id": 215043,
+      "siglaUf": "MA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Josivaldo JP",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/215043.jpg"
+    },
+    {
+      "id": 220526,
+      "siglaUf": "ES",
+      "siglaPartido": "PL",
+      "nome": "Gilvan da Federal",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220526.jpg"
+    },
+    {
+      "id": 220527,
+      "siglaUf": "ES",
+      "siglaPartido": "PT",
+      "nome": "Jack Rocha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220527.jpg"
+    },
+    {
+      "id": 220528,
+      "siglaUf": "ES",
+      "siglaPartido": "PSB",
+      "nome": "Dr. Victor Linhalis",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220528.jpg"
+    },
+    {
+      "id": 220529,
+      "siglaUf": "ES",
+      "siglaPartido": "PODE",
+      "nome": "Gilson Daniel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220529.jpg"
+    },
+    {
+      "id": 220530,
+      "siglaUf": "ES",
+      "siglaPartido": "UNIÃO",
+      "nome": "Messias Donato",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220530.jpg"
+    },
+    {
+      "id": 220532,
+      "siglaUf": "DF",
+      "siglaPartido": "MDB",
+      "nome": "Rafael Prudente",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220532.jpg"
+    },
+    {
+      "id": 220533,
+      "siglaUf": "DF",
+      "siglaPartido": "PV",
+      "nome": "Prof. Reginaldo Veras",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220533.jpg"
+    },
+    {
+      "id": 220534,
+      "siglaUf": "DF",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Fred Linhares",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220534.jpg"
+    },
+    {
+      "id": 220536,
+      "siglaUf": "RR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Zé Haroldo Cathedral",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220536.jpg"
+    },
+    {
+      "id": 220537,
+      "siglaUf": "RR",
+      "siglaPartido": "PSD",
+      "nome": "Helena Lima",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220537.jpg"
+    },
+    {
+      "id": 220538,
+      "siglaUf": "RR",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Albuquerque",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220538.jpg"
+    },
+    {
+      "id": 220539,
+      "siglaUf": "RR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Defensor Stélio Dener",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220539.jpg"
+    },
+    {
+      "id": 220540,
+      "siglaUf": "RR",
+      "siglaPartido": "PODE",
+      "nome": "Duda Ramos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220540.jpg"
+    },
+    {
+      "id": 220542,
+      "siglaUf": "TO",
+      "siglaPartido": "MDB",
+      "nome": "Alexandre Guimarães",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220542.jpg"
+    },
+    {
+      "id": 220543,
+      "siglaUf": "TO",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Ricardo Ayres",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220543.jpg"
+    },
+    {
+      "id": 220544,
+      "siglaUf": "TO",
+      "siglaPartido": "PSDB",
+      "nome": "Antonio Andrade",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220544.jpg"
+    },
+    {
+      "id": 220545,
+      "siglaUf": "TO",
+      "siglaPartido": "PL",
+      "nome": "Filipe Martins",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220545.jpg"
+    },
+    {
+      "id": 220546,
+      "siglaUf": "MS",
+      "siglaPartido": "PL",
+      "nome": "Rodolfo Nogueira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220546.jpg"
+    },
+    {
+      "id": 220547,
+      "siglaUf": "MS",
+      "siglaPartido": "PL",
+      "nome": "Marcos Pollon",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220547.jpg"
+    },
+    {
+      "id": 220548,
+      "siglaUf": "MS",
+      "siglaPartido": "PT",
+      "nome": "Camila Jara",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220548.jpg"
+    },
+    {
+      "id": 220549,
+      "siglaUf": "RS",
+      "siglaPartido": "PP",
+      "nome": "Any Ortiz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220549.jpg"
+    },
+    {
+      "id": 220550,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Mauricio Marcon",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220550.jpg"
+    },
+    {
+      "id": 220551,
+      "siglaUf": "RS",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Franciane Bayer",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220551.jpg"
+    },
+    {
+      "id": 220552,
+      "siglaUf": "RS",
+      "siglaPartido": "PL",
+      "nome": "Zucco",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220552.jpg"
+    },
+    {
+      "id": 220553,
+      "siglaUf": "RS",
+      "siglaPartido": "PT",
+      "nome": "Denise Pessôa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220553.jpg"
+    },
+    {
+      "id": 220554,
+      "siglaUf": "RS",
+      "siglaPartido": "PT",
+      "nome": "Alexandre Lindenmeyer",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220554.jpg"
+    },
+    {
+      "id": 220555,
+      "siglaUf": "RS",
+      "siglaPartido": "PCDOB",
+      "nome": "Daiana Santos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220555.jpg"
+    },
+    {
+      "id": 220556,
+      "siglaUf": "SC",
+      "siglaPartido": "PT",
+      "nome": "Ana Paula Lima",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220556.jpg"
+    },
+    {
+      "id": 220557,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Daniela Reinehr",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220557.jpg"
+    },
+    {
+      "id": 220558,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Zé Trovão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220558.jpg"
+    },
+    {
+      "id": 220559,
+      "siglaUf": "SC",
+      "siglaPartido": "PL",
+      "nome": "Julia Zanatta",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220559.jpg"
+    },
+    {
+      "id": 220560,
+      "siglaUf": "SE",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Thiago de Joaldo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220560.jpg"
+    },
+    {
+      "id": 220561,
+      "siglaUf": "SE",
+      "siglaPartido": "PSD",
+      "nome": "Delegada Katarina",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220561.jpg"
+    },
+    {
+      "id": 220563,
+      "siglaUf": "SE",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Icaro de Valmir",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220563.jpg"
+    },
+    {
+      "id": 220564,
+      "siglaUf": "SE",
+      "siglaPartido": "UNIÃO",
+      "nome": "Yandra Moura",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220564.jpg"
+    },
+    {
+      "id": 220565,
+      "siglaUf": "GO",
+      "siglaPartido": "PT",
+      "nome": "Delegada Adriana Accorsi",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220565.jpg"
+    },
+    {
+      "id": 220566,
+      "siglaUf": "GO",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Lêda Borges",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220566.jpg"
+    },
+    {
+      "id": 220567,
+      "siglaUf": "GO",
+      "siglaPartido": "PSDB",
+      "nome": "Jeferson Rodrigues",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220567.jpg"
+    },
+    {
+      "id": 220568,
+      "siglaUf": "GO",
+      "siglaPartido": "PL",
+      "nome": "Gustavo Gayer",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220568.jpg"
+    },
+    {
+      "id": 220569,
+      "siglaUf": "GO",
+      "siglaPartido": "UNIÃO",
+      "nome": "Silvye Alves",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220569.jpg"
+    },
+    {
+      "id": 220570,
+      "siglaUf": "GO",
+      "siglaPartido": "PSD",
+      "nome": "Dr. Ismael Alexandrino",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220570.jpg"
+    },
+    {
+      "id": 220571,
+      "siglaUf": "GO",
+      "siglaPartido": "PSD",
+      "nome": "Daniel Agrobom",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220571.jpg"
+    },
+    {
+      "id": 220572,
+      "siglaUf": "GO",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Marussa Boldrin",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220572.jpg"
+    },
+    {
+      "id": 220573,
+      "siglaUf": "AP",
+      "siglaPartido": "PDT",
+      "nome": "Dorinaldo Malafaia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220573.jpg"
+    },
+    {
+      "id": 220574,
+      "siglaUf": "PB",
+      "siglaPartido": "PL",
+      "nome": "Cabo Gilberto Silva",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220574.jpg"
+    },
+    {
+      "id": 220576,
+      "siglaUf": "AL",
+      "siglaPartido": "PL",
+      "nome": "Alfredo Gaspar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220576.jpg"
+    },
+    {
+      "id": 220578,
+      "siglaUf": "AP",
+      "siglaPartido": "PDT",
+      "nome": "Josenildo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220578.jpg"
+    },
+    {
+      "id": 220581,
+      "siglaUf": "AL",
+      "siglaPartido": "PSD",
+      "nome": "Luciano Amaral",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220581.jpg"
+    },
+    {
+      "id": 220582,
+      "siglaUf": "AL",
+      "siglaPartido": "PP",
+      "nome": "Daniel Barbosa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220582.jpg"
+    },
+    {
+      "id": 220583,
+      "siglaUf": "AL",
+      "siglaPartido": "PP",
+      "nome": "Delegado Fabio Costa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220583.jpg"
+    },
+    {
+      "id": 220584,
+      "siglaUf": "PB",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Murilo Galdino",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220584.jpg"
+    },
+    {
+      "id": 220585,
+      "siglaUf": "PB",
+      "siglaPartido": "PSD",
+      "nome": "Mersinho Lucena",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220585.jpg"
+    },
+    {
+      "id": 220586,
+      "siglaUf": "AL",
+      "siglaPartido": "MDB",
+      "nome": "Rafael Brito",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220586.jpg"
+    },
+    {
+      "id": 220588,
+      "siglaUf": "AC",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Roberto Duarte",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220588.jpg"
+    },
+    {
+      "id": 220589,
+      "siglaUf": "AC",
+      "siglaPartido": "SOLIDARIEDADE",
+      "nome": "Eduardo Velloso",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220589.jpg"
+    },
+    {
+      "id": 220590,
+      "siglaUf": "AC",
+      "siglaPartido": "UNIÃO",
+      "nome": "Coronel Ulysses",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220590.jpg"
+    },
+    {
+      "id": 220591,
+      "siglaUf": "AC",
+      "siglaPartido": "UNIÃO",
+      "nome": "Meire Serafim",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220591.jpg"
+    },
+    {
+      "id": 220592,
+      "siglaUf": "AC",
+      "siglaPartido": "PP",
+      "nome": "Zezinho Barbary",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220592.jpg"
+    },
+    {
+      "id": 220594,
+      "siglaUf": "MT",
+      "siglaPartido": "PL",
+      "nome": "Coronel Assis",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220594.jpg"
+    },
+    {
+      "id": 220595,
+      "siglaUf": "MT",
+      "siglaPartido": "PL",
+      "nome": "Coronel Fernanda",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220595.jpg"
+    },
+    {
+      "id": 220597,
+      "siglaUf": "RO",
+      "siglaPartido": "UNIÃO",
+      "nome": "Thiago Flores",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220597.jpg"
+    },
+    {
+      "id": 220598,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSOL",
+      "nome": "Tarcísio Motta",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220598.jpg"
+    },
+    {
+      "id": 220599,
+      "siglaUf": "RJ",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Marcelo Crivella",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220599.jpg"
+    },
+    {
+      "id": 220602,
+      "siglaUf": "RJ",
+      "siglaPartido": "PT",
+      "nome": "Dimas Gadelha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220602.jpg"
+    },
+    {
+      "id": 220603,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Dani Cunha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220603.jpg"
+    },
+    {
+      "id": 220604,
+      "siglaUf": "RJ",
+      "siglaPartido": "PDT",
+      "nome": "Marcos Tavares",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220604.jpg"
+    },
+    {
+      "id": 220605,
+      "siglaUf": "RJ",
+      "siglaPartido": "PV",
+      "nome": "Bandeira de Mello",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220605.jpg"
+    },
+    {
+      "id": 220606,
+      "siglaUf": "RJ",
+      "siglaPartido": "PT",
+      "nome": "Reimont",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220606.jpg"
+    },
+    {
+      "id": 220607,
+      "siglaUf": "RJ",
+      "siglaPartido": "UNIÃO",
+      "nome": "Max Lemos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220607.jpg"
+    },
+    {
+      "id": 220608,
+      "siglaUf": "RO",
+      "siglaPartido": "PODE",
+      "nome": "Cristiane Lopes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220608.jpg"
+    },
+    {
+      "id": 220609,
+      "siglaUf": "RO",
+      "siglaPartido": "UNIÃO",
+      "nome": "Maurício Carvalho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220609.jpg"
+    },
+    {
+      "id": 220610,
+      "siglaUf": "RO",
+      "siglaPartido": "PL",
+      "nome": "Dr. Fernando Máximo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220610.jpg"
+    },
+    {
+      "id": 220611,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "General Pazuello",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220611.jpg"
+    },
+    {
+      "id": 220612,
+      "siglaUf": "RJ",
+      "siglaPartido": "PP",
+      "nome": "Bebeto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220612.jpg"
+    },
+    {
+      "id": 220613,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Roberto Monteiro Pai",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220613.jpg"
+    },
+    {
+      "id": 220614,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSD",
+      "nome": "Dr. Daniel Soranz",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220614.jpg"
+    },
+    {
+      "id": 220615,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSOL",
+      "nome": "Pastor Henrique Vieira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220615.jpg"
+    },
+    {
+      "id": 220616,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSDB",
+      "nome": "Luciano Vieira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220616.jpg"
+    },
+    {
+      "id": 220617,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSDB",
+      "nome": "Murillo Gouvea",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220617.jpg"
+    },
+    {
+      "id": 220618,
+      "siglaUf": "RJ",
+      "siglaPartido": "PODE",
+      "nome": "Sargento Portugal",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220618.jpg"
+    },
+    {
+      "id": 220620,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Rosângela Reis",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220620.jpg"
+    },
+    {
+      "id": 220621,
+      "siglaUf": "RN",
+      "siglaPartido": "PL",
+      "nome": "Sargento Gonçalves",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220621.jpg"
+    },
+    {
+      "id": 220622,
+      "siglaUf": "MG",
+      "siglaPartido": "PODE",
+      "nome": "Nely Aquino",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220622.jpg"
+    },
+    {
+      "id": 220623,
+      "siglaUf": "MG",
+      "siglaPartido": "PSOL",
+      "nome": "Duda Salabert",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220623.jpg"
+    },
+    {
+      "id": 220624,
+      "siglaUf": "RN",
+      "siglaPartido": "PP",
+      "nome": "Robinson Faria",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220624.jpg"
+    },
+    {
+      "id": 220625,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Delegada Ione",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220625.jpg"
+    },
+    {
+      "id": 220626,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Rafael Simoes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220626.jpg"
+    },
+    {
+      "id": 220628,
+      "siglaUf": "MG",
+      "siglaPartido": "PL",
+      "nome": "Mauricio do Vôlei",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220628.jpg"
+    },
+    {
+      "id": 220629,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Dandara",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220629.jpg"
+    },
+    {
+      "id": 220630,
+      "siglaUf": "MG",
+      "siglaPartido": "PP",
+      "nome": "Pedro Aihara",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220630.jpg"
+    },
+    {
+      "id": 220631,
+      "siglaUf": "MG",
+      "siglaPartido": "UNIÃO",
+      "nome": "Samuel Viana",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220631.jpg"
+    },
+    {
+      "id": 220632,
+      "siglaUf": "MG",
+      "siglaPartido": "PT",
+      "nome": "Ana Pimentel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220632.jpg"
+    },
+    {
+      "id": 220633,
+      "siglaUf": "SP",
+      "siglaPartido": "NOVO",
+      "nome": "Ricardo Salles",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220633.jpg"
+    },
+    {
+      "id": 220635,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Bruno Ganem",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220635.jpg"
+    },
+    {
+      "id": 220637,
+      "siglaUf": "SP",
+      "siglaPartido": "REDE",
+      "nome": "Marina Silva",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220637.jpg"
+    },
+    {
+      "id": 220638,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Antonio Carlos Rodrigues",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220638.jpg"
+    },
+    {
+      "id": 220640,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Juliana Cardoso",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220640.jpg"
+    },
+    {
+      "id": 220641,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Rodrigo Gambale",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220641.jpg"
+    },
+    {
+      "id": 220642,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Delegado Bruno Lima",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220642.jpg"
+    },
+    {
+      "id": 220643,
+      "siglaUf": "SP",
+      "siglaPartido": "PSOL",
+      "nome": "Sônia Guajajara",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220643.jpg"
+    },
+    {
+      "id": 220644,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Rosangela Moro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220644.jpg"
+    },
+    {
+      "id": 220645,
+      "siglaUf": "SP",
+      "siglaPartido": "PSOL",
+      "nome": "Erika Hilton",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220645.jpg"
+    },
+    {
+      "id": 220646,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Felipe Becari",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220646.jpg"
+    },
+    {
+      "id": 220647,
+      "siglaUf": "SP",
+      "siglaPartido": "PP",
+      "nome": "Mauricio Neves",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220647.jpg"
+    },
+    {
+      "id": 220648,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Marangoni",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220648.jpg"
+    },
+    {
+      "id": 220649,
+      "siglaUf": "SP",
+      "siglaPartido": "UNIÃO",
+      "nome": "Delegado da Cunha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220649.jpg"
+    },
+    {
+      "id": 220650,
+      "siglaUf": "SP",
+      "siglaPartido": "PSD",
+      "nome": "Paulo Alexandre Barbosa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220650.jpg"
+    },
+    {
+      "id": 220651,
+      "siglaUf": "SP",
+      "siglaPartido": "PP",
+      "nome": "Simone Marquetto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220651.jpg"
+    },
+    {
+      "id": 220652,
+      "siglaUf": "SP",
+      "siglaPartido": "PODE",
+      "nome": "Delegado Palumbo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220652.jpg"
+    },
+    {
+      "id": 220653,
+      "siglaUf": "SP",
+      "siglaPartido": "MDB",
+      "nome": "Fábio Teruel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220653.jpg"
+    },
+    {
+      "id": 220654,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Delegado Paulo Bilynskyj",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220654.jpg"
+    },
+    {
+      "id": 220655,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Mario Frias",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220655.jpg"
+    },
+    {
+      "id": 220656,
+      "siglaUf": "CE",
+      "siglaPartido": "PSD",
+      "nome": "Fernanda Pessoa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220656.jpg"
+    },
+    {
+      "id": 220657,
+      "siglaUf": "CE",
+      "siglaPartido": "PL",
+      "nome": "André Fernandes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220657.jpg"
+    },
+    {
+      "id": 220658,
+      "siglaUf": "CE",
+      "siglaPartido": "PSD",
+      "nome": "Luiz Gastão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220658.jpg"
+    },
+    {
+      "id": 220660,
+      "siglaUf": "CE",
+      "siglaPartido": "MDB",
+      "nome": "Yury Bruno",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220660.jpg"
+    },
+    {
+      "id": 220661,
+      "siglaUf": "CE",
+      "siglaPartido": "PL",
+      "nome": "Matheus Noronha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220661.jpg"
+    },
+    {
+      "id": 220662,
+      "siglaUf": "PE",
+      "siglaPartido": "PSB",
+      "nome": "Lucas Ramos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220662.jpg"
+    },
+    {
+      "id": 220663,
+      "siglaUf": "PE",
+      "siglaPartido": "PSB",
+      "nome": "Eriberto Medeiros",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220663.jpg"
+    },
+    {
+      "id": 220664,
+      "siglaUf": "PE",
+      "siglaPartido": "PSD",
+      "nome": "Guilherme Uchoa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220664.jpg"
+    },
+    {
+      "id": 220665,
+      "siglaUf": "PE",
+      "siglaPartido": "PP",
+      "nome": "Clarissa Tércio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220665.jpg"
+    },
+    {
+      "id": 220666,
+      "siglaUf": "PE",
+      "siglaPartido": "PL",
+      "nome": "Coronel Meira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220666.jpg"
+    },
+    {
+      "id": 220667,
+      "siglaUf": "PE",
+      "siglaPartido": "PSB",
+      "nome": "Pedro Campos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220667.jpg"
+    },
+    {
+      "id": 220668,
+      "siglaUf": "PE",
+      "siglaPartido": "PSB",
+      "nome": "Maria Arraes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220668.jpg"
+    },
+    {
+      "id": 220669,
+      "siglaUf": "PE",
+      "siglaPartido": "PP",
+      "nome": "Lula da Fonte",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220669.jpg"
+    },
+    {
+      "id": 220670,
+      "siglaUf": "PE",
+      "siglaPartido": "MDB",
+      "nome": "Iza Arruda",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220670.jpg"
+    },
+    {
+      "id": 220671,
+      "siglaUf": "PA",
+      "siglaPartido": "PT",
+      "nome": "Dilvanda Faro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220671.jpg"
+    },
+    {
+      "id": 220672,
+      "siglaUf": "PA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Henderson Pinto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220672.jpg"
+    },
+    {
+      "id": 220673,
+      "siglaUf": "PA",
+      "siglaPartido": "PL",
+      "nome": "Delegado Caveira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220673.jpg"
+    },
+    {
+      "id": 220674,
+      "siglaUf": "PA",
+      "siglaPartido": "PODE",
+      "nome": "Dra. Alessandra Haber",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220674.jpg"
+    },
+    {
+      "id": 220675,
+      "siglaUf": "PA",
+      "siglaPartido": "MDB",
+      "nome": "Antônio Doido",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220675.jpg"
+    },
+    {
+      "id": 220676,
+      "siglaUf": "PA",
+      "siglaPartido": "PSB",
+      "nome": "Andreia Siqueira",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220676.jpg"
+    },
+    {
+      "id": 220677,
+      "siglaUf": "PA",
+      "siglaPartido": "MDB",
+      "nome": "Keniston Braga",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220677.jpg"
+    },
+    {
+      "id": 220681,
+      "siglaUf": "MA",
+      "siglaPartido": "PODE",
+      "nome": "Fábio Macedo",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220681.jpg"
+    },
+    {
+      "id": 220682,
+      "siglaUf": "PR",
+      "siglaPartido": "PT",
+      "nome": "Tadeu Veneri",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220682.jpg"
+    },
+    {
+      "id": 220683,
+      "siglaUf": "PR",
+      "siglaPartido": "PSDB",
+      "nome": "Beto Richa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220683.jpg"
+    },
+    {
+      "id": 220684,
+      "siglaUf": "PR",
+      "siglaPartido": "PP",
+      "nome": "Tião Medeiros",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220684.jpg"
+    },
+    {
+      "id": 220685,
+      "siglaUf": "PR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Paulo Litro",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220685.jpg"
+    },
+    {
+      "id": 220686,
+      "siglaUf": "MA",
+      "siglaPartido": "AVANTE",
+      "nome": "Duarte Jr.",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220686.jpg"
+    },
+    {
+      "id": 220687,
+      "siglaUf": "MA",
+      "siglaPartido": "SOLIDARIEDADE",
+      "nome": "Márcio Honaiser",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220687.jpg"
+    },
+    {
+      "id": 220688,
+      "siglaUf": "PI",
+      "siglaPartido": "PT",
+      "nome": "Dr. Francisco",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220688.jpg"
+    },
+    {
+      "id": 220689,
+      "siglaUf": "MA",
+      "siglaPartido": "PL",
+      "nome": "Detinha",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220689.jpg"
+    },
+    {
+      "id": 220690,
+      "siglaUf": "BA",
+      "siglaPartido": "PL",
+      "nome": "Capitão Alden",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220690.jpg"
+    },
+    {
+      "id": 220691,
+      "siglaUf": "BA",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Diego Coronel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220691.jpg"
+    },
+    {
+      "id": 220692,
+      "siglaUf": "BA",
+      "siglaPartido": "UNIÃO",
+      "nome": "Dal Barreto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220692.jpg"
+    },
+    {
+      "id": 220693,
+      "siglaUf": "BA",
+      "siglaPartido": "PL",
+      "nome": "Roberta Roma",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220693.jpg"
+    },
+    {
+      "id": 220694,
+      "siglaUf": "BA",
+      "siglaPartido": "MDB",
+      "nome": "Ricardo Maia",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220694.jpg"
+    },
+    {
+      "id": 220695,
+      "siglaUf": "BA",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Rogéria Santos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220695.jpg"
+    },
+    {
+      "id": 220696,
+      "siglaUf": "BA",
+      "siglaPartido": "PT",
+      "nome": "Ivoneide Caetano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220696.jpg"
+    },
+    {
+      "id": 220697,
+      "siglaUf": "PI",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Jadyel Alencar",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220697.jpg"
+    },
+    {
+      "id": 220698,
+      "siglaUf": "PR",
+      "siglaPartido": "PSD",
+      "nome": "Beto Preto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220698.jpg"
+    },
+    {
+      "id": 220699,
+      "siglaUf": "PI",
+      "siglaPartido": "MDB",
+      "nome": "Castro Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220699.jpg"
+    },
+    {
+      "id": 220700,
+      "siglaUf": "PI",
+      "siglaPartido": "PT",
+      "nome": "Florentino Neto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220700.jpg"
+    },
+    {
+      "id": 220701,
+      "siglaUf": "PR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Delegado Matheus Laiola",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220701.jpg"
+    },
+    {
+      "id": 220702,
+      "siglaUf": "PR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Geraldo Mendes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220702.jpg"
+    },
+    {
+      "id": 220703,
+      "siglaUf": "BA",
+      "siglaPartido": "AVANTE",
+      "nome": "Neto Carletto",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220703.jpg"
+    },
+    {
+      "id": 220704,
+      "siglaUf": "PR",
+      "siglaPartido": "PT",
+      "nome": "Carol Dartora",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220704.jpg"
+    },
+    {
+      "id": 220706,
+      "siglaUf": "PR",
+      "siglaPartido": "PP",
+      "nome": "Padovani",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220706.jpg"
+    },
+    {
+      "id": 220707,
+      "siglaUf": "MA",
+      "siglaPartido": "PP",
+      "nome": "Amanda Gentil",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220707.jpg"
+    },
+    {
+      "id": 220708,
+      "siglaUf": "BA",
+      "siglaPartido": "PSD",
+      "nome": "Gabriel Nunes",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220708.jpg"
+    },
+    {
+      "id": 220712,
+      "siglaUf": "AM",
+      "siglaPartido": "UNIÃO",
+      "nome": "Fausto Jr.",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220712.jpg"
+    },
+    {
+      "id": 220713,
+      "siglaUf": "AM",
+      "siglaPartido": "MDB",
+      "nome": "Saullo Vianna",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220713.jpg"
+    },
+    {
+      "id": 220714,
+      "siglaUf": "AM",
+      "siglaPartido": "MDB",
+      "nome": "Adail Filho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220714.jpg"
+    },
+    {
+      "id": 220715,
+      "siglaUf": "AM",
+      "siglaPartido": "REPUBLICANOS",
+      "nome": "Amom Mandel",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220715.jpg"
+    },
+    {
+      "id": 221148,
+      "siglaUf": "SP",
+      "siglaPartido": "PT",
+      "nome": "Alfredinho",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221148.jpg"
+    },
+    {
+      "id": 221328,
+      "siglaUf": "SP",
+      "siglaPartido": "PL",
+      "nome": "Adilson Barroso",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221328.jpg"
+    },
+    {
+      "id": 221329,
+      "siglaUf": "RJ",
+      "siglaPartido": "PSDB",
+      "nome": "Ricardo Abrão",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221329.jpg"
+    },
+    {
+      "id": 221338,
+      "siglaUf": "SP",
+      "siglaPartido": "PSOL",
+      "nome": "Professora Luciene Cavalcante",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/221338.jpg"
+    },
+    {
+      "id": 224117,
+      "siglaUf": "RR",
+      "siglaPartido": "UNIÃO",
+      "nome": "Gabriel Mota",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/224117.jpg"
+    },
+    {
+      "id": 224333,
+      "siglaUf": "PR",
+      "siglaPartido": "PT",
+      "nome": "Welter",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/224333.jpg"
+    },
+    {
+      "id": 225846,
+      "siglaUf": "PR",
+      "siglaPartido": "PL",
+      "nome": "Itamar Paim",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/225846.jpg"
+    },
+    {
+      "id": 226075,
+      "siglaUf": "CE",
+      "siglaPartido": "PL",
+      "nome": "Priscila Costa",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/226075.jpg"
+    },
+    {
+      "id": 226837,
+      "siglaUf": "SP",
+      "siglaPartido": "PSD",
+      "nome": "Saulo Pedroso",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/226837.jpg"
+    },
+    {
+      "id": 227991,
+      "siglaUf": "RJ",
+      "siglaPartido": "PL",
+      "nome": "Dr Flávio",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/227991.jpg"
+    },
+    {
+      "id": 230765,
+      "siglaUf": "RJ",
+      "siglaPartido": "PCDOB",
+      "nome": "Enfermeira Rejane",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230765.jpg"
+    },
+    {
+      "id": 230767,
+      "siglaUf": "MT",
+      "siglaPartido": "PL",
+      "nome": "Rodrigo da Zaeli",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230767.jpg"
+    },
+    {
+      "id": 230768,
+      "siglaUf": "AC",
+      "siglaPartido": "PP",
+      "nome": "Zé Adriano",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230768.jpg"
+    },
+    {
+      "id": 230957,
+      "siglaUf": "SP",
+      "siglaPartido": "MDB",
+      "nome": "João Cury",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/230957.jpg"
+    },
+    {
+      "id": 233592,
+      "siglaUf": "AP",
+      "siglaPartido": "PT",
+      "nome": "Paulo Lemos",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/233592.jpg"
+    },
+    {
+      "id": 233594,
+      "siglaUf": "RO",
+      "siglaPartido": "PODE",
+      "nome": "Rafael Fera",
+      "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/233594.jpg"
+    }
+  ],
+  "fetchedAt": "2026-11-04T23:25:00.003Z",
+  "pages": 6,
+  "duplicates": 0,
+  "invalidRecords": 0,
+  "collection": {
+    "expectedCount": 513,
+    "receivedCount": 513,
+    "pages": [
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome&pagina=1&itens=100",
+        "count": 100,
+        "total": 513
+      },
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome&pagina=2&itens=100",
+        "count": 100,
+        "total": 513
+      },
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?pagina=3&itens=100&ordem=ASC&ordenarPor=nome",
+        "count": 100,
+        "total": 513
+      },
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome&pagina=4&itens=100",
+        "count": 100,
+        "total": 513
+      },
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome&pagina=5&itens=100",
+        "count": 100,
+        "total": 513
+      },
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome&pagina=6&itens=100",
+        "count": 13,
+        "total": 513
+      }
+    ]
+  },
+  "schemaVersion": 1,
+  "source": {
+    "name": "Câmara dos Deputados — Dados Abertos",
+    "endpoint": "https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome&pagina=1&itens=100",
+    "documentation": "https://dadosabertos.camara.leg.br/swagger/api.html",
+    "reference": "Deputados em exercício no momento da consulta, sem filtros temporais."
+  },
+  "integrity": {
+    "recordCount": 513,
+    "sha256": "cac264f0c7827830b3e46bd50106b572dc61ee2e4f7364f92d373dc84702a64a"
+  }
+}

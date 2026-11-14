@@ -1,21 +1,13 @@
 import { useState } from "react";
 import { Plus, Mic, AudioLines, Loader2, Send } from "lucide-react";
 
-const suggestions = [
-  "Qual a tramitação da PEC 45/2019?",
-  "Como foi a votação da PEC 45/2019?",
-  "Me fale sobre PL 2630/2020",
-];
-
 interface ChatInputProps {
   onSend?: (message: string) => void | Promise<void>;
-  showSuggestions?: boolean;
   isSending?: boolean;
 }
 
 const ChatInput = ({
   onSend,
-  showSuggestions = true,
   isSending = false,
 }: ChatInputProps) => {
   const [message, setMessage] = useState("");
@@ -29,13 +21,6 @@ const ChatInput = ({
     }
   };
 
-  const handleSuggestion = (s: string) => {
-    if (isSending) return;
-
-    void onSend?.(s);
-    setMessage("");
-  };
-
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -45,26 +30,6 @@ const ChatInput = ({
 
   return (
     <div className="mx-auto w-full max-w-2xl">
-      {showSuggestions && (
-        <>
-          <h2 className="mb-4 text-center text-xl font-semibold text-foreground">
-            Como posso ajudar?
-          </h2>
-          <div className="mb-4 flex flex-wrap justify-center gap-2">
-            {suggestions.map((s) => (
-              <button
-                key={s}
-                onClick={() => handleSuggestion(s)}
-                disabled={isSending}
-                className="rounded-full border border-border bg-muted px-4 py-2 text-xs text-foreground transition-colors hover:bg-accent disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                {s}
-              </button>
-            ))}
-          </div>
-        </>
-      )}
-
       <div className="flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 shadow-sm transition-shadow focus-within:shadow-md">
         <button
           disabled={isSending}
@@ -79,7 +44,7 @@ const ChatInput = ({
           onKeyDown={handleKeyDown}
           disabled={isSending}
           placeholder="Pergunte alguma coisa"
-          className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none disabled:cursor-not-allowed"
+          className="min-w-0 flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none disabled:cursor-not-allowed"
         />
         <button
           disabled={isSending}

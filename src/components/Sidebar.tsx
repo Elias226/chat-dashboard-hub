@@ -1,6 +1,6 @@
 import { MessageSquarePlus, MessageCircle, Trash2 } from "lucide-react";
 import { Conversation } from "@/types/chat";
-import logo from "@/assets/logo.png";
+import BrandLogo from "@/components/BrandLogo";
 
 interface SidebarProps {
   conversations: Conversation[];
@@ -18,9 +18,9 @@ const Sidebar = ({
   onDeleteConversation,
 }: SidebarProps) => {
   return (
-    <aside className="flex h-screen w-60 flex-col border-r border-border bg-sidebar">
+    <aside className="flex h-full w-60 flex-col border-r border-border bg-sidebar">
       <div className="flex items-center gap-2 px-5 py-5">
-        <img src={logo} alt="Chat Político" className="h-8 w-8 object-contain" />
+        <BrandLogo small />
       </div>
 
       <nav className="flex-1 space-y-0.5 overflow-auto px-3 pt-2">
@@ -59,10 +59,6 @@ const Sidebar = ({
         ))}
       </nav>
 
-      <div className="border-t border-border p-4">
-        <p className="text-xs text-muted-foreground">Chat Político</p>
-        <p className="mt-1 text-sm font-medium text-foreground">Usuário</p>
-      </div>
     </aside>
   );
 };
