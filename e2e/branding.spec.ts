@@ -58,10 +58,19 @@ for (const viewport of [{ width: 1280, height: 720 }, { width: 375, height: 812 
     await expect(input).toHaveValue("Rascunho acessível");
     await input.clear();
 
-    if (viewport.width < 768) await page.getByRole("button", { name: "Mostrar histórico" }).click();
+    const sidebarContainer = page.getByRole("complementary").locator("..");
+    if (viewport.width < 768) {
+      await page.getByRole("button", { name: "Mostrar histórico" }).click();
+      // O botão dentro da sidebar não se move, mas seu contêiner ainda pode
+      // estar recortado pela transição. Aguarda a abertura antes de clicar.
+      await expect(sidebarContainer).toHaveCSS("width", "240px");
+    }
     await page.getByRole("button", { name: "Histórico de verificação", exact: true }).click();
     await expect(page.getByRole("heading", { level: 1, name: "Histórico de verificação", exact: true })).toBeVisible();
-    if (viewport.width < 768) await page.getByRole("button", { name: "Recolher histórico" }).click();
+    if (viewport.width < 768) {
+      await page.getByRole("button", { name: "Recolher histórico" }).click();
+      await expect(sidebarContainer).toHaveCSS("width", "0px");
+    }
     const lastMessage = page.getByText("Última mensagem de verificação.", { exact: true });
     // A mudança de largura da sidebar pode alterar a posição das mensagens;
     // verifica o acesso por rolagem, sem exigir rolagem automática durante a animação.

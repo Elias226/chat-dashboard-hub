@@ -257,3 +257,25 @@ continua às 03:17 em Brasília, na branch padrão, sem exigir novos commits;
 seu próximo disparo real precisa ser acompanhado no Actions. Resultados da
 publicação e da validação pública devem ser conferidos na execução respectiva,
 sem tratar os registros locais anteriores como comprovação remota.
+
+### Publicação confirmada — 14/11/2026
+
+- Bootstrap com dados oficiais concluído na execução `43637599079`; os 27 E2E,
+  build e deploy passaram no Ubuntu 24.04. O JSON público passou a responder 200.
+- Execução normal, sem bootstrap, concluída em `43637841111`, incluindo nova
+  coleta, validação e deploy. Um teste móvel de histórico precisou da repetição
+  automática; o teste agora aguarda as larguras finais da transição da sidebar
+  antes de selecionar uma conversa e conferir o layout, sem esperas fixas nem
+  remoção de asserções. A verificação dessa correção deve ser lida no CI seguinte.
+- Validação real do site público em Edge novo, sem mocks: início, navegação,
+  filtros, carregamento progressivo, perfis básicos e recarga de rota interna,
+  ambos os indicadores e seus agrupamentos passaram. Nenhuma chamada direta à
+  API da Câmara ocorreu nesses fluxos e não houve erros JavaScript não tratados.
+- Perfil oficial e documentação abriram com HTTP 200. O backend existente
+  respondeu à pergunta educativa sobre PEC com HTTP 200 e `mode: template`;
+  isso comprova a comunicação e não geração por IA. Histórico preservado após
+  recarga. Nenhum backend ou contrato do chat foi alterado.
+- Workflow ativo na branch padrão `main`, Pages por Actions e agenda diária
+  mantida. O primeiro disparo real do cron permanece uma ocorrência futura,
+  distinta do fluxo normal manual já executado. Nenhuma configuração manual
+  adicional do GitHub foi necessária nesta publicação.
