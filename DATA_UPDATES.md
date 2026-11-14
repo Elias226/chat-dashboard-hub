@@ -240,3 +240,20 @@ O funcionamento real no GitHub Actions/Linux, a primeira publicação e o próxi
 disparo agendado continuam pendentes de autorização e execução remota. A
 indisponibilidade de fotografias/detalhes opcionais e o calendário do GitHub
 continuam limitações externas; nenhuma mudança no backend do Nilo foi necessária.
+
+## Correção do ambiente de publicação — 14/11/2026
+
+A PR #1 foi integrada à `main` pelo merge `bc0f64f`. A primeira inicialização
+manual (execução `43636544387`) coletou e validou dados oficiais e concluiu o
+build, mas parou antes dos E2E e do deploy: `ubuntu-latest` selecionou Ubuntu
+26.04, incompatível com o Chromium do Playwright 1.60.0 instalado pelo lockfile.
+
+Os jobs passam a usar explicitamente `ubuntu-24.04`, suportado pela versão
+instalada do Playwright, sem mudar dependências ou remover verificações.
+Publicar essa correção não dispensa a primeira execução manual com
+`bootstrap_data=true` enquanto o JSON remoto responder 404. Depois de um deploy
+bem-sucedido, execuções normais usam `bootstrap_data=false` (padrão). A agenda
+continua às 03:17 em Brasília, na branch padrão, sem exigir novos commits;
+seu próximo disparo real precisa ser acompanhado no Actions. Resultados da
+publicação e da validação pública devem ser conferidos na execução respectiva,
+sem tratar os registros locais anteriores como comprovação remota.
