@@ -2,12 +2,16 @@ import { Message, type MessageSource } from "@/types/chat";
 import { useEffect, useRef } from "react";
 import { ExternalLink } from "lucide-react";
 import { getSourceHost, normalizeOfficialSource } from "@/lib/sourceLinks";
+import ChatResponseInfo from "./ChatResponseInfo";
+import { Button } from "./ui/button";
 
 interface ChatMessagesProps {
   messages: Message[];
+  onRetry?: (message: string) => void;
+  isSending?: boolean;
 }
 
-const ChatMessages = ({ messages }: ChatMessagesProps) => {
+const ChatMessages = ({ messages, onRetry, isSending = false }: ChatMessagesProps) => {
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -18,7 +22,7 @@ const ChatMessages = ({ messages }: ChatMessagesProps) => {
 
   return (
     <div className="flex flex-1 flex-col gap-4 overflow-auto px-4 py-6">
-      {messages.map((msg) => {
+      {messages.map((msg, index) => {
         const sources =
           msg.role === "assistant"
             ? (Array.isArray(msg.sources) ? msg.sources : []).map(normalizeOfficialSource).filter((source): source is MessageSource => source !== null)
@@ -36,7 +40,11 @@ const ChatMessages = ({ messages }: ChatMessagesProps) => {
                   : "bg-muted text-foreground"
               }`}
             >
+              {msg.role === "assistant" && <ChatResponseInfo message={msg} />}
               <div className="whitespace-pre-wrap">{msg.content}</div>
+              {msg.role === "assistant" && msg.mode === "error" && index === messages.length - 1 && messages[index - 1]?.role === "user" && onRetry && (
+                <Button variant="outline" size="sm" disabled={isSending} onClick={() => onRetry(messages[index - 1].content)} className="mt-3">Tentar novamente</Button>
+              )}
 
               {Boolean(sources.length) && (
                 <div className="mt-3 border-t border-border/70 pt-2">

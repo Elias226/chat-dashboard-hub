@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import { PanelLeftClose, PanelLeft } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Sidebar from "@/components/Sidebar";
 import ChatWelcome from "@/components/ChatWelcome";
 import ChatInput from "@/components/ChatInput";
 import ChatMessages from "@/components/ChatMessages";
+import ChatProcessing from "@/components/ChatProcessing";
 import SiteFooter from "@/components/SiteFooter";
 import { useConversations } from "@/hooks/useConversations";
-import { sendChatMessage } from "@/services/chatApi";
+import { ChatRequestError, sendChatMessage } from "@/services/chatApi";
 
 const Index = () => {
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 768);
   const [isSending, setIsSending] = useState(false);
+  const inFlight = useRef(false);
 
   const {
     conversations,
@@ -28,7 +30,8 @@ const Index = () => {
   const hasMessages = Boolean(activeConversation?.messages.length);
 
   const handleSend = async (message: string) => {
-    if (isSending) return;
+    if (inFlight.current) return;
+    inFlight.current = true;
 
     let convId = activeConversationId;
 
@@ -47,14 +50,16 @@ const Index = () => {
         intent: response.intent,
         mode: response.mode,
       });
-    } catch {
+    } catch (error) {
       addMessage(
         convId,
         "assistant",
-        "Não consegui consultar o backend agora. Tente novamente em instantes."
+        error instanceof ChatRequestError ? error.message : "Não consegui consultar o backend agora. Tente novamente em instantes.",
+        { mode: "error" }
       );
     } finally {
       setIsSending(false);
+      inFlight.current = false;
     }
   };
 
@@ -107,13 +112,14 @@ const Index = () => {
         <main className="flex min-h-0 flex-1 flex-col overflow-hidden bg-card">
           <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
             {hasMessages ? (
-              <ChatMessages messages={activeConversation!.messages} />
+              <ChatMessages messages={activeConversation!.messages} onRetry={(message) => void handleSend(message)} isSending={isSending} />
             ) : (
               <ChatWelcome onSend={handleSend} isSending={isSending} />
             )}
           </div>
           {/* Input area — always below the scrollable content */}
           <div className="shrink-0 border-t border-border px-4 py-4 sm:px-8">
+            {isSending && <ChatProcessing />}
             <ChatInput
               onSend={handleSend}
               isSending={isSending}

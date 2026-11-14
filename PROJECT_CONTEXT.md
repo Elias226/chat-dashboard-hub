@@ -1,5 +1,12 @@
 # Contexto do projeto — Chat Político
 
+> **Chat — 14/11/2026:** o frontend distingue IA, respostas de base e modo não
+> informado; inclui carregamento, limite total de 90 segundos e nova tentativa
+> manual. Diagnóstico público e proposta para Nilo em [NILO_AI_SETUP.md](NILO_AI_SETUP.md).
+> Nos quatro testes reais desta etapa, todos os retornos foram `mode: template`;
+> geração por IA não foi comprovada. O backend não foi alterado. As limitações
+> antigas de ausência de timeout/identificação visual foram superadas no frontend.
+
 > **Evolução local até 14/11/2026:** as seções 13 a 17 registram os Indicadores oficiais, a área de Parlamentares, o diagnóstico de confiabilidade, os dados consolidados e a preparação segura da publicação. As seções anteriores preservam o retrato histórico recuperado em 15/10/2026; referências antigas a gráficos demonstrativos não descrevem mais a página `/graficos` atual.
 
 > Última atualização: **15/10/2026**. Documento de continuidade técnica e de produto.

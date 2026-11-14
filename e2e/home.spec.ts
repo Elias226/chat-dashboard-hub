@@ -156,7 +156,8 @@ test("mantém o tratamento de falha do assistente", async ({ page }) => {
   await page.goto("./chat");
   await page.getByPlaceholder("Pergunte alguma coisa").fill("Teste de falha");
   await page.getByPlaceholder("Pergunte alguma coisa").press("Enter");
-  await expect(page.getByText("Não consegui consultar o backend agora. Tente novamente em instantes.")).toBeVisible();
+  await expect(page.getByText("O serviço de respostas está indisponível no momento. Tente novamente em instantes.", { exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Tentar novamente", exact: true })).toBeVisible();
   await expect(page.getByPlaceholder("Pergunte alguma coisa")).toBeEnabled();
 });
 
