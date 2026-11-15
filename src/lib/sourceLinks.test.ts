@@ -6,6 +6,7 @@ describe("fontes oficiais: protocolo, autoridade e normalização", () => {
   it.each([
     "https://www.camara.leg.br/", "https://www2.camara.leg.br/atividade-legislativa",
     "https://www12.senado.leg.br/dados-abertos", "https://www25.senado.leg.br/web/senadores/em-exercicio",
+    "https://adm.senado.leg.br/vcb/vocab/index.php?/direita-ciencia-politica=&tema=8592",
     "https://servicodados.ibge.gov.br/api/v1/localidades/estados", "https://cidades.ibge.gov.br/",
     "https://dadosabertos.tse.jus.br/", "https://cdn.tse.jus.br/estatistica/arquivo.zip",
     "https://divulgacandcontas.tse.jus.br/", "https://api.portaldatransparencia.gov.br/api-de-dados",
@@ -26,6 +27,7 @@ describe("fontes oficiais: protocolo, autoridade e normalização", () => {
     "javascript:alert(1)", "JaVaScRiPt:void(0)", "data:text/html,<script>alert(1)</script>", "vbscript:msgbox(1)",
     "file:///etc/passwd", "blob:https://www.camara.leg.br/example", "//www.camara.leg.br/", "/api/v2/deputados",
     "https://www.camara.leg.br.evil.example/", "https://evilcamara.leg.br/", "https://www.camara.leg.br@evil.example/",
+    "https://adm.senado.leg.br.evil.example/", "https://evil-adm.senado.leg.br/",
     "https://attacker@www.camara.leg.br/", "https://user:password@www.camara.leg.br/", "https://www.camara.leg.br:444/",
     "https://www.camara.leg.br./", "https://www.cаmara.leg.br/", "https://new-unreviewed.gov.br/",
     "https://www.camara.leg.br\\@evil.example/", "https://www.camara.leg.br\n.evil.example/", "https://www.camara.leg.br/pa\tth",

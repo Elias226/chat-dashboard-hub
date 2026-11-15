@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { ExternalLink } from "lucide-react";
 import { getSourceHost, normalizeOfficialSource } from "@/lib/sourceLinks";
 import ChatResponseInfo from "./ChatResponseInfo";
+import ChatFormattedText from "./ChatFormattedText";
 import { Button } from "./ui/button";
 
 interface ChatMessagesProps {
@@ -41,7 +42,7 @@ const ChatMessages = ({ messages, onRetry, isSending = false }: ChatMessagesProp
               }`}
             >
               {msg.role === "assistant" && <ChatResponseInfo message={msg} />}
-              <div className="whitespace-pre-wrap">{msg.content}</div>
+              {msg.role === "assistant" ? <ChatFormattedText text={msg.content} /> : <div className="whitespace-pre-wrap">{msg.content}</div>}
               {msg.role === "assistant" && msg.mode === "error" && index === messages.length - 1 && messages[index - 1]?.role === "user" && onRetry && (
                 <Button variant="outline" size="sm" disabled={isSending} onClick={() => onRetry(messages[index - 1].content)} className="mt-3">Tentar novamente</Button>
               )}
