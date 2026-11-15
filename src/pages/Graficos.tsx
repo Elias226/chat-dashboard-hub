@@ -39,10 +39,11 @@ const Graficos = () => {
           </div>
         </div>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:gap-5 xl:ml-auto xl:w-auto">
-          <nav aria-label="Navegação dos indicadores" className="flex shrink-0 items-center gap-5 text-sm text-[#17324D]">
+          <nav aria-label="Navegação dos indicadores" className="flex shrink-0 flex-wrap items-center gap-x-5 gap-y-3 text-sm text-[#17324D]">
             <Link to="/" className="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#167D8D] focus-visible:ring-offset-4">Início</Link>
             <Link to="/chat" className="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#167D8D] focus-visible:ring-offset-4">Assistente IA</Link>
             <Link to="/parlamentares" className="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#167D8D] focus-visible:ring-offset-4">Parlamentares</Link>
+            <Link to="/projetos-de-lei" className="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#167D8D] focus-visible:ring-offset-4">Projetos de lei</Link>
           </nav>
           <div className="relative min-w-0 flex-1 xl:w-64">
             <Search aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />

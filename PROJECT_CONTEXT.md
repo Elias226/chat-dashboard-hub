@@ -1,5 +1,15 @@
 # Contexto do projeto — Chat Político
 
+> **Projetos de Lei — 14/11/2026:** implementadas `/projetos-de-lei` e
+> `/projetos-de-lei/:id`. A área usa um recorte oficial completo de PL, PEC e
+> PLP apresentados em sete dias, publicado com o site e atualizado no workflow
+> diário. Assunto filtra esse recorte; tipo+número+ano permite consulta exata
+> explícita à Câmara em outros períodos. Detalhes incluem autoria, situação e
+> tramitações, sem inferir conversão em lei. Consulte [PROPOSALS_DATA.md](PROPOSALS_DATA.md).
+> O estado de publicação e resultados finais devem ser conferidos no CI e no
+> relatório desta etapa; registros históricos abaixo não são validação atual.
+> O backend/Render do Nilo e sua pendência de deploy ficaram fora desta tarefa.
+
 > **Chat — 14/11/2026:** o frontend distingue IA, respostas de base e modo não
 > informado; inclui carregamento, limite total de 90 segundos e nova tentativa
 > manual. Diagnóstico público e proposta para Nilo em [NILO_AI_SETUP.md](NILO_AI_SETUP.md).

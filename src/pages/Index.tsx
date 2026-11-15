@@ -84,7 +84,7 @@ const Index = () => {
 
       <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
         <header className="flex shrink-0 flex-wrap items-center justify-between gap-3 border-b border-border px-4 py-4 sm:px-8">
-          <div className="flex min-w-0 flex-1 items-center gap-3">
+          <div className="flex min-w-0 basis-full items-center gap-3 sm:basis-auto sm:flex-1">
             <Button
               variant="ghost"
               size="icon"
@@ -102,9 +102,10 @@ const Index = () => {
               {activeConversation ? activeConversation.title : "Chat Político"}
             </h1>
           </div>
-          <nav aria-label="Navegação do assistente" className="flex shrink-0 gap-4 text-sm">
+          <nav aria-label="Navegação do assistente" className="flex max-w-full shrink-0 flex-wrap gap-x-4 gap-y-2 text-sm">
             <Link to="/" className="text-muted-foreground hover:underline">Início</Link>
             <Link to="/parlamentares" className="text-muted-foreground hover:underline">Parlamentares</Link>
+            <Link to="/projetos-de-lei" className="text-muted-foreground hover:underline">Projetos de lei</Link>
             <Link to="/graficos" className="text-muted-foreground hover:underline">Indicadores</Link>
           </nav>
         </header>

@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       bootstrap_data:
-        description: 'Primeira publicação: permitir JSON oficial versionado somente se o remoto retornar 404'
+        description: 'Inicializar JSON oficial novo (deputados/proposições) somente se o remoto retornar 404'
         type: boolean
         default: false
   schedule:
@@ -63,6 +63,16 @@ jobs:
 
       - name: Verify consolidated dataset
         run: npm run data:validate
+
+      # Independent bounded module: a failed refresh keeps the last complete
+      # published proposal snapshot and reports a warning, without partial data.
+      - name: Prepare complete recent proposals
+        run: npm run proposals:prepare
+        env:
+          ALLOW_INITIAL_DATA: ${{ github.event_name == 'workflow_dispatch' && inputs.bootstrap_data && '1' || '0' }}
+
+      - name: Verify recent proposals
+        run: npm run proposals:validate
 
       - name: Build
         run: npm run build
