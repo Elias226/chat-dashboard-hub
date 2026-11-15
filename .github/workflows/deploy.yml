@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       bootstrap_data:
-        description: 'Inicializar JSON oficial novo (deputados/proposições) somente se o remoto retornar 404'
+        description: 'Inicializar JSON oficial novo (deputados/proposições/senadores) somente em HTTP 404'
         type: boolean
         default: false
   schedule:
@@ -73,6 +73,14 @@ jobs:
 
       - name: Verify recent proposals
         run: npm run proposals:validate
+
+      - name: Prepare complete Senate dataset
+        run: npm run senators:prepare
+        env:
+          ALLOW_INITIAL_DATA: ${{ github.event_name == 'workflow_dispatch' && inputs.bootstrap_data && '1' || '0' }}
+
+      - name: Verify Senate dataset
+        run: npm run senators:validate
 
       - name: Build
         run: npm run build

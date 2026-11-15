@@ -50,7 +50,7 @@ test("renderiza 20 inicialmente, carrega mais e filtra inclusive registros ainda
 test("navega entre início, listagem, perfil básico, indicadores e chat com cache compartilhado", async ({ page }, testInfo) => {
   const mocked = await mockDeputies(page);
   await page.goto("./");
-  await page.getByRole("link", { name: "Consultar deputados" }).click();
+  await page.getByRole("link", { name: "Consultar parlamentares" }).click();
   await page.getByRole("link", { name: "Ver detalhes de Carla de Teste", exact: true }).click();
   await expect(page).toHaveURL(/\/parlamentares\/3$/);
   await expect(page.getByRole("heading", { level: 1, name: "Carla de Teste", exact: true })).toBeVisible();

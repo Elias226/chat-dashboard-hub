@@ -20,6 +20,9 @@
     "proposals:update": "node --experimental-strip-types scripts/update-proposals.mjs",
     "proposals:validate": "node --experimental-strip-types scripts/update-proposals.mjs --validate",
     "proposals:prepare": "node --experimental-strip-types scripts/update-proposals.mjs --prepare",
+    "senators:update": "node --experimental-strip-types scripts/update-senators.mjs",
+    "senators:validate": "node --experimental-strip-types scripts/update-senators.mjs --validate",
+    "senators:prepare": "node --experimental-strip-types scripts/update-senators.mjs --prepare",
     "test:ci": "npm run test && npm run test:data",
     "test:e2e:pages": "playwright test --config playwright.pages.config.ts"
   },

@@ -1,5 +1,8 @@
 import { useMemo, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import ChamberSwitch from "@/components/ChamberSwitch";
+import SenateIndicators from "@/components/SenateIndicators";
+import CongressComparison from "@/components/CongressComparison";
 import { useDeputies } from "@/hooks/useDeputies";
 import { ArrowLeft, Loader2, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,6 +18,8 @@ const charts = [
 ];
 
 const Graficos = () => {
+  const [params] = useSearchParams();
+  const house = ["senado", "comparativo"].includes(params.get("casa") ?? "") ? params.get("casa")! : "camara";
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const { data, isPending, isFetching, isError, error, refetch, canUseLastComplete, usingLastComplete, useLastComplete } = useDeputies();
@@ -35,7 +40,7 @@ const Graficos = () => {
           </Button>
           <div>
             <h1 className="text-lg font-semibold text-foreground">Todos os Gráficos</h1>
-            <p className="text-sm text-muted-foreground">Indicadores com dados oficiais da Câmara dos Deputados.</p>
+            <p className="text-sm text-muted-foreground">Indicadores oficiais e informações sobre o Congresso Nacional.</p>
           </div>
         </div>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:gap-5 xl:ml-auto xl:w-auto">
@@ -45,14 +50,16 @@ const Graficos = () => {
             <Link to="/parlamentares" className="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#167D8D] focus-visible:ring-offset-4">Parlamentares</Link>
             <Link to="/projetos-de-lei" className="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#167D8D] focus-visible:ring-offset-4">Projetos de lei</Link>
           </nav>
-          <div className="relative min-w-0 flex-1 xl:w-64">
+          {house !== "comparativo" && <div className="relative min-w-0 flex-1 xl:w-64">
             <Search aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input aria-label="Pesquisar gráficos" placeholder="Pesquisar gráficos..." value={search} onChange={(event) => setSearch(event.target.value)} className="pl-9" />
-          </div>
+          </div>}
         </div>
       </header>
 
       <main className="w-full flex-1 p-4 sm:p-8">
+        <ChamberSwitch indicators value={house} />
+        {house === "senado" ? <SenateIndicators search={search} /> : house === "comparativo" ? <CongressComparison /> : <>
         <section aria-label="Sobre os indicadores" className="mb-6 rounded-xl border border-[#17324D]/10 bg-[#F5F8FB] p-5 text-sm leading-7 text-[#243746]">
           <p className="font-semibold text-[#17324D]">Deputados em exercício no momento da consulta</p>
           <p>Período de referência: retrato da composição na consulta, sem filtros históricos. UF e partido seguem os registros retornados pela Câmara.</p>
@@ -91,6 +98,7 @@ const Graficos = () => {
             )}
           </>
         )}
+        </>}
       </main>
       <SiteFooter />
     </div>

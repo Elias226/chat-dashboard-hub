@@ -1,0 +1,77 @@
+import { expect, test } from "../playwright-fixture";
+import { senateFixture } from "../src/test/senateFixture";
+import { mockDeputies } from "./fixtures/camara";
+test.beforeEach(async ({ page }) => {
+  await mockDeputies(page);
+  await page.route("**/data/senadores.json", async route => route.fulfill({ json: await senateFixture() }));
+});
+test("opções das Casas preservam deputados e filtram todos os senadores com detalhe publicado", async ({ page }) => {
+  let live = 0;
+  await page.route("https://legis.senado.leg.br/dadosabertos/**", route => { live++; return route.abort(); });
+  await page.goto("./parlamentares");
+  await expect(page.getByRole("heading", { name: "Conheça os deputados federais" })).toBeVisible();
+  await page.getByRole("navigation", { name: "Casa legislativa" }).getByRole("link", { name: "Senadores", exact: true }).click();
+  const list = page.getByRole("list", { name: "Senadores encontrados" });
+  await expect(list.getByRole("listitem")).toHaveCount(20);
+  await page.getByRole("button", { name: "Carregar mais", exact: true }).click();
+  await expect(list.getByRole("listitem")).toHaveCount(40);
+  await page.getByLabel("Nome do senador").fill("AGATA");
+  await page.getByLabel("Estado (UF)").selectOption("AC");
+  await page.getByLabel("Partido", { exact: true }).selectOption("ALFA");
+  await expect(list.getByRole("listitem")).toHaveCount(1);
+  await page.getByRole("link", { name: "Ver detalhes de Ágata de Teste", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Ágata de Teste", exact: true })).toBeVisible();
+  await expect(page.getByText("1º Suplente", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Abrir perfil oficial no Senado" })).toHaveAttribute("href", "https://www25.senado.leg.br/web/senadores/senador/-/perfil/1");
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Ágata de Teste", exact: true })).toBeVisible();
+  expect(live).toBe(0);
+});
+test("partidos usam denominador explícito e comparativo mantém referências e contagens independentes", async ({ page }) => {
+  await page.goto("./graficos");
+  await expect(page.getByRole("heading", { name: "Deputados federais por estado" })).toBeVisible();
+  await page.getByRole("navigation", { name: "Opções dos indicadores" }).getByRole("link", { name: "Senado Federal", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Senadores por partido", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Como funcionam os mandatos no Senado" })).toBeVisible();
+  await page.getByText("Ver dados em tabela", { exact: true }).click();
+  const table = page.getByRole("table", { name: "Senadores por partido", exact: true });
+  await expect(table.getByRole("columnheader", { name: "% de 81 cadeiras" })).toBeVisible();
+  await expect(table.getByRole("row", { name: /ALFA/ })).toHaveText("ALFA2733,3%");
+  await page.getByRole("navigation", { name: "Opções dos indicadores" }).getByRole("link", { name: "Comparativo Câmara x Senado" }).click();
+  await expect(page.getByRole("heading", { name: "Duas Casas, representações diferentes" })).toBeVisible();
+  const comparison = page.getByRole("table", { name: "Comparativo institucional Câmara x Senado" });
+  await expect(comparison.getByRole("row", { name: /Parlamentares no conjunto publicado/ })).toHaveText("Parlamentares no conjunto publicado581");
+  await expect(comparison).toContainText("Quatro anos.");
+  await expect(comparison).toContainText("Oito anos");
+  await expect(page.getByRole("link", { name: "Câmara — deputados", exact: true })).toBeVisible();
+});
+test("erros e publicação parcial não geram nomes ou indicadores presumidos", async ({ page }) => {
+  await page.route("**/data/senadores.json", route => route.fulfill({ status: 503 }));
+  await page.goto("./parlamentares?casa=senado");
+  await expect(page.getByRole("alert")).toContainText("Não foi possível carregar a publicação do Senado");
+  await expect(page.getByRole("button", { name: "Tentar novamente" })).toBeVisible();
+  await page.route("**/data/senadores.json", async route => route.fulfill({ json: { ...await senateFixture(), senators: [] } }));
+  await page.goto("./graficos?casa=senado");
+  await expect(page.getByRole("alert")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Senadores por partido" })).toHaveCount(0);
+});
+test("transição de fevereiro de 2027 avisa sobre publicação antiga sem inventar eleitos", async ({ page }) => {
+  await page.clock.install({ time: new Date("2027-02-01T12:00:00Z") });
+  await page.goto("./parlamentares?casa=senado");
+  await expect(page.getByRole("alert")).toContainText("antecede uma mudança de legislatura");
+  await expect(page.getByRole("status")).toHaveText("81 de 81 senadores encontrados");
+});
+test("carregamento, resultados inexistentes, perfil ausente e layout móvel", async ({ page }) => {
+  let release!: () => void;
+  const pending = new Promise<void>(resolve => { release = resolve; });
+  await page.route("**/data/senadores.json", async route => { await pending; return route.fulfill({ json: await senateFixture() }); });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("./parlamentares?casa=senado");
+  await expect(page.getByRole("status")).toHaveText("Carregando senadores publicados…");
+  release();
+  await page.getByLabel("Nome do senador").fill("Nome inexistente");
+  await expect(page.getByText("Nenhum senador encontrado com os filtros selecionados.")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.goto("./parlamentares/senadores/9999999");
+  await expect(page.getByRole("heading", { name: "Senador não encontrado nesta publicação" })).toBeVisible();
+});

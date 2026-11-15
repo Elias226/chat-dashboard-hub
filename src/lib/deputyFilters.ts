@@ -6,7 +6,7 @@ function normalizeName(value: string) {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR").trim();
 }
 
-export function filterDeputies(deputies: Deputy[], name: string, uf: string, party: string): Deputy[] {
+export function filterDeputies<T extends Pick<Deputy, "id" | "nome" | "siglaUf" | "siglaPartido">>(deputies: T[], name: string, uf: string, party: string): T[] {
   const search = normalizeName(name);
   return deputies.filter((deputy) => (
     (!search || normalizeName(deputy.nome ?? "").includes(search)) &&
@@ -19,7 +19,7 @@ export function filterDeputies(deputies: Deputy[], name: string, uf: string, par
   });
 }
 
-export function deputyFilterOptions(deputies: Deputy[], field: "siglaUf" | "siglaPartido") {
+export function deputyFilterOptions(deputies: Pick<Deputy, "siglaUf" | "siglaPartido">[], field: "siglaUf" | "siglaPartido") {
   const values = [...new Set(deputies.map((deputy) => deputy[field]).filter((value): value is string => Boolean(value)))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   const options = values.map((value) => ({ value, label: value }));
   if (deputies.some((deputy) => !deputy[field])) options.push({ value: MISSING_FILTER, label: "Não informado" });

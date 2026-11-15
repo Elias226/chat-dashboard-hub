@@ -28,9 +28,9 @@ const features = [
   {
     title: "Parlamentares",
     icon: UsersRound,
-    description: "Conheça os deputados federais em exercício e consulte suas informações na Câmara.",
+    description: "Conheça deputados federais e senadores em exercício e consulte suas informações oficiais.",
     to: "/parlamentares",
-    action: "Consultar deputados",
+    action: "Consultar parlamentares",
     status: "Disponível",
   },
   {
@@ -44,7 +44,7 @@ const features = [
   {
     title: "Indicadores",
     icon: BarChart3,
-    description: "Consulte a distribuição dos deputados federais em exercício por estado e por partido.",
+    description: "Explore dados das duas Casas e conheça suas diferenças institucionais.",
     to: "/graficos",
     action: "Explorar gráficos",
     status: "Fonte oficial",
