@@ -1,5 +1,14 @@
 # Contexto do projeto — Chat Político
 
+> **Senado e Indicadores — 14/11/2026:** a seção Parlamentares passa a oferecer
+> Deputados Federais e Senadores; Indicadores oferece Câmara, Senado e comparativo
+> institucional. Senado usa a lista oficial em exercício, com JSON validado,
+> atualização no workflow existente e preservação da última publicação válida.
+> Mandato, exercício e eleição não são confundidos; há validações e aviso na
+> transição de legislatura. Arquitetura e limites em [SENATE_DATA.md](SENATE_DATA.md).
+> A confirmação final de publicação está no CI e no relatório desta tarefa.
+> Backend/Render não foram alterados ou investigados nesta ampliação.
+
 > **Projetos de Lei — 14/11/2026:** implementadas `/projetos-de-lei` e
 > `/projetos-de-lei/:id`. A área usa um recorte oficial completo de PL, PEC e
 > PLP apresentados em sete dias, publicado com o site e atualizado no workflow

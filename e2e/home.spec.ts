@@ -11,7 +11,7 @@ test("apresenta as quatro áreas e distingue funcionalidades futuras", async ({ 
     await expect(page.getByRole("heading", { name, exact: true })).toBeVisible();
   }
   await expect(page.getByText("Em desenvolvimento", { exact: true })).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "Consultar deputados" })).toHaveAttribute("href", /\/parlamentares$/);
+  await expect(page.getByRole("link", { name: "Consultar parlamentares" })).toHaveAttribute("href", /\/parlamentares$/);
   await expect(page.getByRole("link", { name: "Pesquisar propostas" })).toHaveAttribute("href", /\/projetos-de-lei$/);
   await expect(page.getByText("Fonte oficial", { exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("inicio-desktop.png"), fullPage: true });
@@ -25,7 +25,7 @@ test("navega entre início, assistente e gráficos com pesquisa preservada", asy
   await expect(page.getByRole("heading", { name: "Como posso ajudar você a entender a política?" })).toBeVisible();
   await page.getByRole("link", { name: "Indicadores", exact: true }).click();
   await expect(page).toHaveURL(/\/graficos$/);
-  await expect(page.getByText("Indicadores com dados oficiais da Câmara dos Deputados.")).toBeVisible();
+  await expect(page.getByText("Indicadores oficiais e informações sobre o Congresso Nacional.")).toBeVisible();
   await expect(page.getByRole("heading", { level: 2 })).toHaveCount(2);
   await page.getByPlaceholder("Pesquisar gráficos...").fill("partido");
   await expect(page.getByRole("heading", { level: 2 })).toHaveCount(1);

@@ -1,5 +1,11 @@
 # Atualização dos dados oficiais — Chat Político
 
+> **Senadores — 14/11/2026:** `senators:prepare` e `senators:validate` publicam
+> o conjunto oficial em exercício no mesmo workflow. Falhas preservam a última
+> versão completa e sua data. O novo arquivo exige bootstrap manual explícito
+> somente em 404. Sem mudanças nas regras de deputados e proposições.
+> Consulte [SENATE_DATA.md](SENATE_DATA.md).
+
 > **Projetos de Lei — 14/11/2026:** nova publicação independente de sete dias,
 > com consulta exata histórica opcional. Cobertura, fontes, integridade e
 > política de falhas em [PROPOSALS_DATA.md](PROPOSALS_DATA.md). A semântica e o

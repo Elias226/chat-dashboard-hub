@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import ChamberSwitch from "@/components/ChamberSwitch";
+import SenatorsList from "@/components/SenatorsList";
 import { ArrowRight, Loader2, Search, UsersRound } from "lucide-react";
 import { useDeputies } from "@/hooks/useDeputies";
 import { deputyFilterOptions, filterDeputies } from "@/lib/deputyFilters";
@@ -12,6 +14,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const Parlamentares = () => {
+  const [params] = useSearchParams();
+  const senate = params.get("casa") === "senado";
   const [name, setName] = useState("");
   const [uf, setUf] = useState("");
   const [party, setParty] = useState("");
@@ -27,6 +31,8 @@ const Parlamentares = () => {
     <div className="flex min-h-screen flex-col bg-[#F5F8FB] text-[#243746]">
       <ParliamentHeader />
       <main className="mx-auto w-full max-w-7xl flex-1 px-5 py-8 sm:px-8 sm:py-10">
+        <ChamberSwitch value={senate ? "senado" : "camara"} />
+        {senate ? <SenatorsList /> : <>
         <div className="mb-7 max-w-3xl">
           <p className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#167D8D]"><UsersRound aria-hidden="true" className="h-4 w-4" /> Parlamentares · Câmara dos Deputados</p>
           <h1 className="text-3xl font-semibold tracking-tight text-[#17324D] sm:text-4xl">Conheça os deputados federais</h1>
@@ -82,6 +88,7 @@ const Parlamentares = () => {
             <CamaraSource fetchedAt={data.fetchedAt} />
           </>
         )}
+        </>}
       </main>
       <SiteFooter />
     </div>
