@@ -19,8 +19,11 @@ test("dados reais publicados: indicadores sem acesso do navegador à API", async
     const region = page.getByRole("region", { name: title, exact: true });
     await region.getByText("Ver dados em tabela", { exact: true }).click();
     for (const { category, count } of groupDeputies(data.deputies, field)) {
-      await expect(region.getByRole("row", { name: `${category} ${count}`, exact: true })).toBeVisible();
+      const row = region.getByRole("row").filter({ has: page.getByRole("rowheader", { name: category, exact: true }) });
+      await expect(row.getByRole("cell").first()).toHaveText(String(count));
+      if (field === "siglaPartido") await expect(row.getByRole("cell").nth(1)).toHaveText(`${(count / data.deputies.length * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%`);
     }
+    if (field === "siglaPartido") await expect(region.locator("circle[data-party]")).toHaveCount(data.deputies.length);
     await region.getByText("Ver dados em tabela", { exact: true }).click();
   }
   expect(apiRequests).toEqual([]);

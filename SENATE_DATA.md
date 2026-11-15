@@ -1,5 +1,10 @@
 # Senado Federal — consulta e indicadores
 
+> Em 15/11/2026, a composição partidária passou a usar um hemiciclo simbólico
+> compartilhado com a Câmara; o comparativo ganhou resumos e os dois desenhos.
+> Fonte, conjunto, atualização e tabela institucional continuam iguais.
+> Consulte [INDICATORS_VISUALS.md](INDICATORS_VISUALS.md) para a metodologia visual.
+
 ## Fonte e referência
 
 - [Documentação oficial de senadores em exercício](https://www12.senado.leg.br/dados-abertos/legislativo/parlamentares/senadores-em-exercicio).

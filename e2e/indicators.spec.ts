@@ -12,8 +12,8 @@ test("exibe os dois indicadores publicados e reutiliza uma única consulta ao si
   await expect(states.getByRole("row", { name: "CE 2", exact: true })).toBeVisible();
   await page.getByText("Ver dados em tabela", { exact: true }).last().click();
   const parties = page.getByRole("table", { name: "Deputados federais por partido" });
-  await expect(parties.getByRole("row", { name: "ALFA 2", exact: true })).toBeVisible();
-  await expect(parties.getByRole("row", { name: "BETA 3", exact: true })).toBeVisible();
+  await expect(parties.getByRole("row", { name: "ALFA 2 40%", exact: true })).toBeVisible();
+  await expect(parties.getByRole("row", { name: "BETA 3 60%", exact: true })).toBeVisible();
   await expect(page.getByRole("link", { name: "Dados Abertos da Câmara dos Deputados · documentação", exact: true }).first()).toHaveAttribute("href", "https://dadosabertos.camara.leg.br/swagger/api.html");
   await expect(page.locator("time").first()).toHaveAttribute("datetime", /\d{4}-\d{2}-\d{2}T/);
   await expect(page.getByText(/Metodologia:/)).toBeVisible();
@@ -46,7 +46,8 @@ test("falha do arquivo não consulta a Câmara nem mostra gráficos parciais e p
   await page.route(datasetPattern, (route) => route.fulfill(failing ? { status: 503, json: {} } : { json: data }));
   await page.goto("./graficos");
   await expect(page.getByRole("alert")).toContainText("HTTP 503");
-  await expect(page.locator(".recharts-wrapper")).toHaveCount(0);
+  await expect(page.locator("circle[data-party]")).toHaveCount(0);
+  await expect(page.getByRole("img", { name: /Gráfico lollipop/ })).toHaveCount(0);
   failing = false;
   await page.getByRole("button", { name: "Tentar novamente" }).click();
   await expect(page.getByRole("heading", { level: 2 })).toHaveCount(2);
@@ -58,9 +59,9 @@ test("recusa conjunto vazio ou corrompido sem criar contagens", async ({ page })
   await page.route(datasetPattern, (route) => route.fulfill({ json: { ...data, deputies: [] } }));
   await page.goto("./graficos");
   await expect(page.getByRole("alert")).toContainText("integridade");
-  await expect(page.locator(".recharts-wrapper")).toHaveCount(0);
+  await expect(page.locator("circle[data-party]")).toHaveCount(0);
   await page.route(datasetPattern, (route) => route.fulfill({ json: { ...data, integrity: { ...data.integrity, sha256: "0".repeat(64) } } }));
   await page.getByRole("button", { name: "Tentar novamente" }).click();
   await expect(page.getByRole("alert")).toContainText("integridade");
-  await expect(page.locator(".recharts-wrapper")).toHaveCount(0);
+  await expect(page.locator("circle[data-party]")).toHaveCount(0);
 });
