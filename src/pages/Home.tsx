@@ -36,8 +36,10 @@ const features = [
   {
     title: "Projetos de lei",
     icon: FileText,
-    description: "Uma futura área para pesquisar propostas e acompanhar seu caminho até virar lei.",
-    status: "Em desenvolvimento",
+    description: "Pesquise propostas na Câmara e conheça sua autoria, situação e tramitação.",
+    to: "/projetos-de-lei",
+    action: "Pesquisar propostas",
+    status: "Disponível",
   },
   {
     title: "Indicadores",
@@ -62,6 +64,7 @@ const Home = () => (
           <Link to="/" aria-current="page" className="home-nav-active">Início</Link>
           <Link to="/chat">Assistente IA</Link>
           <Link to="/parlamentares">Parlamentares</Link>
+          <Link to="/projetos-de-lei">Projetos de lei</Link>
           <Link to="/graficos">Indicadores</Link>
         </nav>
         <Link to="/chat" className="home-button home-header-cta">

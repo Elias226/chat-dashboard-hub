@@ -1,5 +1,10 @@
 # Atualização dos dados oficiais — Chat Político
 
+> **Projetos de Lei — 14/11/2026:** nova publicação independente de sete dias,
+> com consulta exata histórica opcional. Cobertura, fontes, integridade e
+> política de falhas em [PROPOSALS_DATA.md](PROPOSALS_DATA.md). A semântica e o
+> bootstrap de deputados permanecem preservados.
+
 > **Procedimento vigente em 14/11/2026:** a publicação foi reforçada e passou a
 > reutilizar o último JSON completo publicado quando a Câmara falha. Consulte
 > a atualização operacional no final deste arquivo e [SECURITY_REVIEW.md](SECURITY_REVIEW.md).

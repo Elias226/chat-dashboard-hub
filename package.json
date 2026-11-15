@@ -17,6 +17,9 @@
     "test:data": "node --experimental-strip-types --test scripts/*.test.mjs",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
     "data:prepare": "node --experimental-strip-types scripts/prepare-publication.mjs",
+    "proposals:update": "node --experimental-strip-types scripts/update-proposals.mjs",
+    "proposals:validate": "node --experimental-strip-types scripts/update-proposals.mjs --validate",
+    "proposals:prepare": "node --experimental-strip-types scripts/update-proposals.mjs --prepare",
     "test:ci": "npm run test && npm run test:data",
     "test:e2e:pages": "playwright test --config playwright.pages.config.ts"
   },

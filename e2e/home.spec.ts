@@ -10,9 +10,9 @@ test("apresenta as quatro áreas e distingue funcionalidades futuras", async ({ 
   for (const name of ["Assistente IA", "Parlamentares", "Projetos de lei", "Indicadores"]) {
     await expect(page.getByRole("heading", { name, exact: true })).toBeVisible();
   }
-  await expect(page.getByText("Em desenvolvimento", { exact: true })).toHaveCount(1);
+  await expect(page.getByText("Em desenvolvimento", { exact: true })).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Consultar deputados" })).toHaveAttribute("href", /\/parlamentares$/);
-  await expect(page.getByRole("link", { name: /Projetos de lei/ })).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Pesquisar propostas" })).toHaveAttribute("href", /\/projetos-de-lei$/);
   await expect(page.getByText("Fonte oficial", { exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("inicio-desktop.png"), fullPage: true });
 });
