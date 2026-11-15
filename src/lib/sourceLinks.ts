@@ -4,7 +4,7 @@ import type { MessageSource } from "@/types/chat";
 // Exact matching prevents suffix traps, lookalikes and arbitrary gov.br tenants.
 const officialHosts = new Set([
   "camara.leg.br", "www.camara.leg.br", "www2.camara.leg.br", "dadosabertos.camara.leg.br",
-  "senado.leg.br", "www.senado.leg.br", "legis.senado.leg.br", "www12.senado.leg.br", "www25.senado.leg.br",
+  "senado.leg.br", "www.senado.leg.br", "legis.senado.leg.br", "www12.senado.leg.br", "www25.senado.leg.br", "adm.senado.leg.br",
   "ibge.gov.br", "www.ibge.gov.br", "servicodados.ibge.gov.br", "cidades.ibge.gov.br",
   "tse.jus.br", "www.tse.jus.br", "dadosabertos.tse.jus.br", "cdn.tse.jus.br", "divulgacandcontas.tse.jus.br",
   "portaldatransparencia.gov.br", "www.portaldatransparencia.gov.br", "api.portaldatransparencia.gov.br",
