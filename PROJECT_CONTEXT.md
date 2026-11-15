@@ -1,5 +1,15 @@
 # Contexto do projeto — Chat Político
 
+> **Apresentação dos Indicadores — 15/11/2026:** composição partidária da Câmara
+> e do Senado em hemiciclos simbólicos, com uma cadeira por registro e cores
+> compartilhadas, sem posições ideológicas ou assentos reais. UFs usam lollipop;
+> o comparativo ganha resumos por Casa. Dois indicadores opcionais usam apenas
+> o recorte publicado de proposições, carregado ao abrir a seção. Fontes,
+> tabelas e datas foram preservadas. Metodologia em
+> [INDICATORS_VISUALS.md](INDICATORS_VISUALS.md). A etapa não altera os dados,
+> a atualização automática ou o backend; resultados de testes e publicação
+> devem ser conferidos no relatório e no CI da respectiva alteração.
+
 > **Senado e Indicadores — 14/11/2026:** a seção Parlamentares passa a oferecer
 > Deputados Federais e Senadores; Indicadores oferece Câmara, Senado e comparativo
 > institucional. Senado usa a lista oficial em exercício, com JSON validado,

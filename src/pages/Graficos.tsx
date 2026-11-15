@@ -8,7 +8,9 @@ import { ArrowLeft, Loader2, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import SiteFooter from "@/components/SiteFooter";
-import DeputiesChart from "@/components/DeputiesChart";
+import DistributionChart from "@/components/DistributionChart";
+import PartyHemicycle from "@/components/PartyHemicycle";
+import ProposalIndicators from "@/components/ProposalIndicators";
 import { CamaraStaleNotice, CamaraUnavailable } from "@/components/CamaraReliability";
 import { CAMARA_DOCUMENTATION, groupDeputies } from "@/services/camaraDeputies";
 
@@ -39,7 +41,7 @@ const Graficos = () => {
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <div>
-            <h1 className="text-lg font-semibold text-foreground">Todos os Gráficos</h1>
+            <h1 className="text-lg font-semibold text-foreground">Indicadores do Congresso</h1>
             <p className="text-sm text-muted-foreground">Indicadores oficiais e informações sobre o Congresso Nacional.</p>
           </div>
         </div>
@@ -92,13 +94,14 @@ const Graficos = () => {
               <p role="status" className="py-16 text-center text-muted-foreground">A Câmara não retornou deputados para esta consulta. Nenhum indicador foi calculado.</p>
             ) : (
               <div className="grid items-start gap-6 xl:grid-cols-2">
-                {filtered.map((chart) => <DeputiesChart key={chart.id} id={chart.id} title={chart.title} description={chart.description} data={grouped[chart.field]} fetchedAt={data.fetchedAt} color={chart.color} />)}
+                {filtered.map((chart) => chart.field === "siglaUf" ? <DistributionChart key={chart.id} id={chart.id} title={chart.title} description={chart.description} data={grouped[chart.field]} fetchedAt={data.fetchedAt} color={chart.color} /> : <PartyHemicycle key={chart.id} id={chart.id} title={chart.title} data={grouped.siglaPartido} fetchedAt={data.fetchedAt} label="Deputados" sourceUrl={CAMARA_DOCUMENTATION} sourceLabel="Dados Abertos da Câmara dos Deputados · documentação" />)}
                 {filtered.length === 0 && <p className="col-span-full py-12 text-center text-muted-foreground">Nenhum gráfico encontrado.</p>}
               </div>
             )}
           </>
         )}
         </>}
+        <ProposalIndicators />
       </main>
       <SiteFooter />
     </div>
